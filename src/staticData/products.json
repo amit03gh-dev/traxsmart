@@ -1,0 +1,154 @@
+[
+    {
+        "id": "2g-gps",
+        "name": "TSINDIA 140 (2G)",
+        "category": "GPS Devices",
+        "description": "The TSindia140 GPS Device is a rugged, AIS140 & BIS16833-certified tracker designed for all vehicle types. With IP65 protection, a 1000mAh backup battery, fast 30-second GPS cold start, and support for SOS panic button, driver behavior monitoring, and fuel/temperature/load sensors, it offers reliable performance and complete fleet control in any environment.",
+        "images": [
+            "https://traxsmart.in/media/tsindia140/2.jpg",
+            "https://traxsmart.in/media/tsindia140/3.jpg",
+            "https://traxsmart.in/media/tsindia140/8.jpg",
+            "https://traxsmart.in/media/tsindia140/5.jpg",
+            "https://traxsmart.in/media/tsindia140/6.jpg"
+        ],
+        "features": [
+            {
+                "key": "Certification",
+                "value": "AIS140 & BIS16833 Certified"
+            },
+            {
+                "key": "Protocol Support",
+                "value": "Government-mandated VLT and emergency button protocols"
+            },
+            {
+                "key": "Supported Alerts",
+                "value": "SOS, Over speeding, Harsh braking, Power cut, Geofence entry/exit"
+            }
+        ],
+        "technical": {
+            "Network": "2G GSM",
+            "Battery": "1000mAh",
+            "Dimensions": "85 x 50 x 20 mm",
+            "Weight": "150g"
+        },
+        "productTabs": {
+            "description": {
+                "title": "The TSindia140: Advanced Tech for Modern Fleets.",
+                "text": "Certified for AIS140 and BIS16833, the TSindia140 is a next-generation GPS tracker engineered for total fleet control, regulatory compliance, and real-time visibility. Designed for vehicles of all kinds — from commercial fleets to heavy-duty machines — it delivers advanced features, remote management, and data-driven insights to maximize operational efficiency.",
+                "highlights": [
+                    "AIS140 & BIS IS16833 Certified",
+                    "Remote Immobilization & Real-Time Alerts",
+                    "Advanced Sensor Integration",
+                    "Fast & Accurate GPS Tracking",
+                    "Built Rugged with IP65 Protection"
+                ],
+                "image": "https://traxsmart.in/media/tsindia140/fleet.jpg"
+            },
+            "features": [
+                {
+                    "key": "Rugged Build",
+                    "value": "Strong casing with IP65 protection"
+                },
+                {
+                    "key": "Water Resistant",
+                    "value": "Safe against splashes & rain"
+                },
+                {
+                    "key": "Multi-sensor Support",
+                    "value": "Compatible with multiple vehicle sensors"
+                },
+                {
+                    "key": "SOS Panic Button",
+                    "value": "Dedicated emergency button included"
+                }
+            ],
+            "technical": {
+                "Certification": "AIS140 & BIS IS16833",
+                "Battery": "1000mAh",
+                "Cold Start": "30 Seconds",
+                "Support": "9-90V"
+            },
+            "packaging": {
+                "items": ["TSindia140 GPS Device"],
+                "shipping": ["Free shipping on orders over ₹10,000"],
+                "bulkOrders": ["We support large-scale deployment for fleet operators, system integrators, OEMs, and government projects. Special pricing, custom branding, and integration support available for orders of 50 units or more. Reach out to our sales team for volume discounts and tailored logistics."]
+            }
+        }
+    },
+     {
+        "id": "4g-gps",
+        "name": "TSINDIA 140 (2G)",
+        "category": "GPS Devices",
+        "description": "The TSindia140 GPS Device is a rugged, AIS140 & BIS16833-certified tracker designed for all vehicle types. With IP65 protection, a 1000mAh backup battery, fast 30-second GPS cold start, and support for SOS panic button, driver behavior monitoring, and fuel/temperature/load sensors, it offers reliable performance and complete fleet control in any environment.",
+        "images": [
+            "https://traxsmart.in/media/tsindia140/2.jpg",
+            "https://traxsmart.in/media/tsindia140/3.jpg",
+            "https://traxsmart.in/media/tsindia140/8.jpg",
+            "https://traxsmart.in/media/tsindia140/5.jpg",
+            "https://traxsmart.in/media/tsindia140/6.jpg"
+        ],
+        "features": [
+            {
+                "key": "Certification",
+                "value": "AIS140 & BIS16833 Certified"
+            },
+            {
+                "key": "Protocol Support",
+                "value": "Government-mandated VLT and emergency button protocols"
+            },
+            {
+                "key": "Supported Alerts",
+                "value": "SOS, Over speeding, Harsh braking, Power cut, Geofence entry/exit"
+            }
+        ],
+        "technical": {
+            "Network": "2G GSM",
+            "Battery": "1000mAh",
+            "Dimensions": "85 x 50 x 20 mm",
+            "Weight": "150g"
+        },
+        "productTabs": {
+            "description": {
+                "title": "The TSindia140: Advanced Tech for Modern Fleets.",
+                "text": "Certified for AIS140 and BIS16833, the TSindia140 is a next-generation GPS tracker engineered for total fleet control, regulatory compliance, and real-time visibility. Designed for vehicles of all kinds — from commercial fleets to heavy-duty machines — it delivers advanced features, remote management, and data-driven insights to maximize operational efficiency.",
+                "highlights": [
+                    "AIS140 & BIS IS16833 Certified",
+                    "Remote Immobilization & Real-Time Alerts",
+                    "Advanced Sensor Integration",
+                    "Fast & Accurate GPS Tracking",
+                    "Built Rugged with IP65 Protection"
+                ],
+                "image": "https://traxsmart.in/media/tsindia140/fleet.jpg"
+            },
+            "features": [
+                {
+                    "key": "Rugged Build",
+                    "value": "Strong casing with IP65 protection"
+                },
+                {
+                    "key": "Water Resistant",
+                    "value": "Safe against splashes & rain"
+                },
+                {
+                    "key": "Multi-sensor Support",
+                    "value": "Compatible with multiple vehicle sensors"
+                },
+                {
+                    "key": "SOS Panic Button",
+                    "value": "Dedicated emergency button included"
+                }
+            ],
+            "technical": {
+                "Certification": "AIS140 & BIS IS16833",
+                "Battery": "1000mAh",
+                "Cold Start": "30 Seconds",
+                "Support": "9-90V"
+            },
+            "packaging": {
+                "items": ["TSindia140 GPS Device"],
+                "shipping": ["Free shipping on orders over ₹10,000"],
+                "bulkOrders": ["We support large-scale deployment for fleet operators, system integrators, OEMs, and government projects. Special pricing, custom branding, and integration support available for orders of 50 units or more. Reach out to our sales team for volume discounts and tailored logistics."]
+            }
+        }
+    }
+]

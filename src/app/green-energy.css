@@ -1,0 +1,332 @@
+/* ===================================
+    Crafto - Green energy 
+====================================== */
+/* font */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;display=swap");
+/* variable */
+:root {
+  --alt-font: "Inter", sans-serif;
+  --primary-font: "Inter", sans-serif;
+  --base-color: #0b4df5;
+  --green: #19584b;
+  --dark-gray: #1f2220;
+  --medium-gray: #828282;
+  --very-light-gray: #f7f7f7;
+}
+body {
+  font-size: 16px;
+  line-height: 28px;
+}
+/* header */
+.navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu {
+  width: 300px;
+}
+.navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a {
+  font-size: 16px;
+  color: var(--dark-gray);
+  font-weight: 600;
+}
+.navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a:hover,
+.navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li.active:hover > a {
+  background-color: var(--base-color);
+  color: var(--white);
+}
+.navbar .navbar-nav .dropdown .dropdown-menu a i,
+.navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a i {
+  font-size: 40px;
+  margin-right: 10px;
+  width: 40px;
+}
+.navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu li a:hover i {
+  color: var(--white);
+}
+header .navbar-brand img {
+  max-height: 36px;
+}
+.navbar .navbar-nav .nav-link {
+  font-weight: 600;
+  font-size: 18px;
+}
+/* button */
+.btn {
+  font-weight: 600;
+  text-transform: none;
+  letter-spacing: 0px;
+}
+.btn.btn-switch-text.btn-extra-large > span {
+  padding: 17px 38px;
+  font-size: 17px;
+}
+.btn.btn-switch-text.btn-large > span {
+  padding: 13px 32px;
+  font-size: 15px;
+}
+.btn.btn-switch-text.btn-medium > span {
+  padding: 12px 26px;
+  font-size: 14px;
+}
+/* heading */
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 25px;
+}
+/* Text gradient color */
+.text-gradient-light-green-white {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #ebf6ee 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* Background color */
+.bg-light-green {
+  background-color: #c4e7cc;
+}
+.bg-very-light-green {
+  background-color: #ebf3ed;
+}
+.bg-theme {
+  background-color: var(--base-color);
+}
+
+/* Transparent background color */
+.bg-gradient-green-transparent {
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, #ebf3ed 100%);
+}
+
+.right-210px {
+  right: 210px;
+}
+
+/* page title */
+.page-title-large h1 {
+  font-size: 4.2rem;
+  line-height: 4rem;
+}
+.page-title-large h2 {
+  font-size: 18px;
+}
+
+/* Border color */
+.border-color-dark-green {
+  border-color: var(--green);
+}
+/* Subcribe style 02 */
+.newsletter-style-02 .btn:hover {
+  background-color: var(--green);
+}
+.newsletter-style-02 .btn {
+  height: 85%;
+  margin: 4px;
+  padding: 5px 20px 5px;
+}
+.newsletter-style-02 input {
+  padding-right: 75px !important;
+}
+
+/* Will change */
+.animation-rotation {
+  -webkit-animation: rotation 2.5s infinite linear;
+}
+/* footer */
+footer .footer-logo img {
+  max-height: 43px;
+  width: auto;
+}
+footer a:hover {
+  color: var(--white);
+}
+footer ul li {
+  margin-bottom: 2px;
+}
+@media (min-width: 1400px) {
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1320px;
+  }
+}
+@media (max-width: 1600px) {
+  /* Font size */
+  .fs-80 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
+@media (max-width: 1199px) {
+  .navbar .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 10px 10px;
+  }
+}
+@media (max-width: 991px) {
+  /* Background image */
+  .md-background-position-top-center {
+    background-position: top center !important;
+  }
+  .navbar .navbar-nav .dropdown.dropdown-with-icon-style02 .dropdown-menu {
+    padding-bottom: 15px;
+  }
+}
+@media (max-width: 767px) {
+  /* Background image */
+  .sm-background-position-top-center {
+    background-position: top center !important;
+  }
+}
+
+
+/* ===================================
+    Crafto - Fashion store
+====================================== */
+/* font */
+.bg-nero-grey, .bg-nero-grey:focus {
+    background-color: #1B1B1B;
+}
+/* min-width */
+.min-w-150px {
+    min-width: 150px;
+}
+/* btn */
+.btn.btn-large { 
+    padding: 15px 30px;
+}
+.btn {
+    text-transform: inherit;
+}
+.btn.btn-dark-gray {
+    font-weight: 400;
+}
+.btn.btn-extra-large {
+    font-size: 19px;
+    padding: 20px 38px;
+}
+.btn.btn-large {
+    font-size: 18px;
+    padding: 15px 30px;
+}
+.btn.btn-medium {
+    font-size: 16px;
+    padding: 13px 26px;
+}
+.btn.btn-small {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.btn.btn-very-small {
+    font-size: 14px;
+    padding: 9px 20px;
+}
+.btn.btn-link {
+    padding: 0 0 2px;
+}
+/* page title */
+.page-title-extra-large h1 {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+}
+/* top bottom left right class */
+.left-15 {
+    left: 15%;
+}
+/* interactive banner */
+.interactive-banner-style-09 .image-content:hover .content-arrow {
+    opacity: 1;
+}
+/* tab style 04 */
+.tab-style-04 .nav-tabs .nav-item .nav-link {
+    line-height: 50px;
+}
+/* progress bar 02 */
+.progress-bar-style-02 .progress {
+    height: 10px; 
+}
+/* footer */
+.footer-dark, .footer-dark p, .footer-dark a {
+    color: var(--medium-gray); 
+}
+footer .footer-logo img {
+    max-height: 34px;
+}
+footer .nav-link {
+    color: var(--white);
+    padding: 0 20px;
+}
+footer ul li {
+    margin-bottom: 0;
+}
+footer .elements-social.social-icon-style-02 li {
+    margin: 0 14px 0 0;
+}
+/* tab style 07 */
+.tab-style-07 .nav-tabs .nav-item .nav-link {
+    padding: 20px 30px;
+}
+.tab-style-07 .nav-tabs .nav-item .nav-link.active span,
+.tab-style-07 .nav-tabs .nav-item .nav-link:hover span {
+    color: var(--dark-gray);
+}
+/* tooltip */
+.tooltip.show {
+    opacity: 1;
+}
+.bs-tooltip-auto[data-popper-placement^=top] .tooltip-arrow::before, .bs-tooltip-top .tooltip-arrow::before {
+    border-top-color: var(--dark-gray);
+    top: -2px;
+}
+.tooltip .tooltip-inner {
+    background-color: var(--dark-gray);
+    border-radius: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: 500;
+}
+/* media query responsive */
+@media (max-width: 1399px) {
+    .sticky-wrap.shadow-in { left: 25px; }
+    .center-logo .navbar-nav .nav-link, header.sticky .center-logo .navbar-nav .nav-link {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+}
+@media (max-width: 1250px){
+    .sticky-wrap.shadow-in { left: 10px; }
+}
+@media (max-width: 991px) {
+    .tab-style-07 .nav-tabs .nav-item .nav-link { padding: 20px; }
+    .navbar.center-logo .navbar-left, .navbar.center-logo .navbar-right { width: 100%; }
+    .navbar .navbar-nav .dropdown .dropdown-menu a, .navbar .navbar-nav .dropdown .dropdown-menu li.sub-title, .navbar-modern-inner .navbar-nav .dropdown .dropdown-menu li.sub-title, .navbar-full-screen-menu-inner .navbar-nav .dropdown .dropdown-menu li.sub-title { line-height: normal; }
+    .header-icon .icon > a, .header-icon .icon .header-language > a, .header-icon .icon .header-cart > a { padding-left: 12px; }
+    footer .nav-link { padding: 0 12px; }
+    .tab-style-04 .nav-tabs .nav-item { padding: 0 16px; }
+}
+@media (max-width: 767px) {
+    .tab-style-04 .nav-tabs .nav-item .nav-link { line-height: 35px; }
+    .swiper-number-pagination-progress-vertical .swiper-pagination-wrapper { right: 15px;}
+    .btn.btn-large { font-size: 17px; padding: 13px 25px; }
+}
+@media (min-width: 1301px) and (max-width: 1399px) {
+    .navbar.center-logo .navbar-nav .nav-link, header.sticky .center-logo .navbar-nav .nav-link { padding-left: 13px; padding-right: 13px; font-size: 18px; }
+}
+@media (min-width: 1200px) and (max-width: 1300px) {
+    .navbar.center-logo .navbar-nav .nav-link, header.sticky .center-logo .navbar-nav .nav-link { padding-left: 11px; padding-right: 11px; font-size: 17px; }
+    .header-icon .icon > a { font-size: 16px; padding-left: 13px; }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .header-icon .icon > a { font-size: 16px; padding-left: 10px; }
+    .header-icon .icon .header-language > a, .header-icon .icon .header-cart > a { padding-left: 10px; font-size: 16px; }
+    .navbar.center-logo .navbar-nav .nav-link, header.sticky .center-logo .navbar-nav .nav-link { padding-left: 14px; padding-right: 14px; font-size: 17px; }
+    .btn.btn-switch-text.btn-large>span { padding: 16px 28px; }
+}

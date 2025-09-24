@@ -1,0 +1,168 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.featureScroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.featureScroll::-webkit-scrollbar {
+  display: none;
+}
+
+.featureCard {
+  flex: 0 0 280px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  border: 2px solid #e5e7eb;
+  background: white;
+  position: relative;
+  overflow: hidden;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.featureCard.active {
+  border-color: #3b82f6;
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  color: white;
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.3);
+}
+
+.featureCard.active:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 35px rgba(59, 130, 246, 0.4);
+}
+
+.iconContainer {
+  width: 60px;
+  height: 60px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.iconContainer.default {
+  background: #f8fafc;
+  color: #3b82f6;
+}
+
+.iconContainer.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+.activeBadge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: #10b981;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.imageContainer {
+  height: 250px;
+  max-width: 400px;
+  position: relative;
+  margin: 0 auto 2rem;
+}
+
+.imageContainer img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.descriptionBox {
+  background: #f8fafc;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  max-width: 600px;
+  border-left: 4px solid #3b82f6;
+}
+
+.descriptionText {
+  font-size: 1.1rem;
+  color: #374151;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+.indicatorDots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #d1d5db;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dot.active {
+  background: #3b82f6;
+  transform: scale(1.2);
+}
+
+.gradientText {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.featureTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0;
+  transition: all 0.3s ease;
+}
+
+.featureTitle.active {
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .featureCard {
+    flex: 0 0 260px;
+  }
+  
+  .imageContainer {
+    height: 220px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .descriptionBox {
+    margin: 1rem auto;
+    padding: 1.25rem;
+  }
+  
+  .descriptionText {
+    font-size: 1rem;
+  }
+}
