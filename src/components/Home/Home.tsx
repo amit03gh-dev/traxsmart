@@ -1,47 +1,47 @@
 'use client';
 
-import SliderComp from '../Slider';
-import VerticalSlider from '../VerticalSlider';
+// import SliderComp from '../Slider';
+// import VerticalSlider from '../VerticalSlider';
 import HeroSlider from './HeroSlider';
 
-type SlideData = {
-  src: string;
-  title?: string;
-  subTitle?: string;
-  buttonText?: string;
-  layout?: 'left' | 'center' | 'custom' | 'right';
-  textColor?: string;
-  customClass?: string;
-};
+// type SlideData = {
+//   src: string;
+//   title?: string;
+//   subTitle?: string;
+//   buttonText?: string;
+//   layout?: 'left' | 'center' | 'custom' | 'right';
+//   textColor?: string;
+//   customClass?: string;
+// };
 
 export default function HomeComp() {
-  const sliderImages: SlideData[] = [
-    {
-      src: 'https://traxsmart.in/media/bg-blue.png',
-      title: 'Software Development',
-      buttonText: 'Discover more',
-      layout: 'left',
-      textColor: 'text-white',
-    },
-    { src: 'https://traxsmart.in/media/banner/saas.jpg' },
-    {
-      src: 'https://traxsmart.in/media/bg-blue.png',
-      title: 'm2m eSim Services',
-      subTitle: 'IoT Connectivity',
-      buttonText: 'Discover more',
-      layout: 'left',
-      textColor: 'text-white',
-    },
-    { src: 'https://traxsmart.in/media/banner/esim.jpg' },
-    {
-      src: 'https://traxsmart.in/media/bg-blue.png',
-      title: 'Track Anything, Anytime',
-      buttonText: 'Discover more',
-      layout: 'left',
-      textColor: 'text-white',
-    },
-    { src: 'https://traxsmart.in/media/banner/gps.jpg' },
-  ];
+  // const sliderImages: SlideData[] = [
+  //   {
+  //     src: 'https://traxsmart.in/media/bg-blue.png',
+  //     title: 'Software Development',
+  //     buttonText: 'Discover more',
+  //     layout: 'left',
+  //     textColor: 'text-white',
+  //   },
+  //   { src: 'https://traxsmart.in/media/banner/saas.jpg' },
+  //   {
+  //     src: 'https://traxsmart.in/media/bg-blue.png',
+  //     title: 'm2m eSim Services',
+  //     subTitle: 'IoT Connectivity',
+  //     buttonText: 'Discover more',
+  //     layout: 'left',
+  //     textColor: 'text-white',
+  //   },
+  //   { src: 'https://traxsmart.in/media/banner/esim.jpg' },
+  //   {
+  //     src: 'https://traxsmart.in/media/bg-blue.png',
+  //     title: 'Track Anything, Anytime',
+  //     buttonText: 'Discover more',
+  //     layout: 'left',
+  //     textColor: 'text-white',
+  //   },
+  //   { src: 'https://traxsmart.in/media/banner/gps.jpg' },
+  // ];
 
   return (
     <HeroSlider/>

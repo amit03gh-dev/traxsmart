@@ -1,7 +1,7 @@
 'use client';
 
 import { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperClass, SwiperSlide } from 'swiper/react';
 import { Navigation, Autoplay, Keyboard } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -51,7 +51,8 @@ const slides: Slide[] = [
 ];
 
 export default function HeroSlider() {
-  const swiperRef = useRef<any>(null);
+//   const swiperRef = useRef<any>(null);
+const swiperRef = useRef<SwiperClass | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
