@@ -4,8 +4,8 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Thumbs, Autoplay } from 'swiper/modules';
 import Image from 'next/image';
 import { useState } from 'react';
+import type { Swiper as SwiperType } from 'swiper';
 
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
@@ -24,7 +24,7 @@ const galleryImages: GalleryImage[] = [
 ];
 
 export default function ProductGallery() {
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (
     <div className="col-lg-7 pe-50px md-pe-15px md-mb-40px">

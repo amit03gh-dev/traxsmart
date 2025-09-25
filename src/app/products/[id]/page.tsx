@@ -1,10 +1,11 @@
 // app/products/[id]/page.tsx
 import { Metadata } from "next";
 import ProductGallery from "@/components/Product/productGallary";
-import ProductTabs from "@/components/Product/ProductTabs";
+// import ProductTabs from "@/components/Product/ProductTabs";
 import products from "@/staticData/products.json";
 import { Product } from "@/types/product";
 import ImageSlider from "@/components/Product/ImageSlider";
+import Image from "next/image";
 
 export async function generateStaticParams() {
   return (products as Product[]).map((p) => ({
@@ -377,11 +378,19 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                                   transform: "translate3d(0px, 0px, 0px)",
                                 }}
                               >
-                                <img
+                                {/* <img
                                   src="/media/tsindia140/fleet.jpg"
                                   className="border-radius-6px w-100"
                                   alt=""
                                   data-no-retina=""
+                                /> */}
+                                <Image
+                                  src="/media/tsindia140/fleet.jpg"
+                                  alt=""
+                                  className="border-radius-6px w-100"
+                                  width={800}
+                                  height={600}
+                                  priority={true}
                                 />
                               </div>
                               <span
@@ -873,10 +882,17 @@ export default function ProductPage({ params }: { params: { id: string } }) {
                       <div className="col-auto mt-60px pt-15px pb-15px ps-40px pe-40px md-ps-25px md-pe-25px bg-solitude-blue border-radius-100px">
                         <div className="feature-box feature-box-left-icon-middle">
                           <div className="feature-box-icon me-10px">
-                            <img
+                            {/* <img
                               src="images/demo-green-energy-home-icon-06.html"
                               alt=""
                               data-no-retina=""
+                            /> */}
+
+                            <Image
+                              src="/images/demo-green-energy-home-icon-06.html" // make sure this is a valid image format (png/jpg/svg)
+                              alt=""
+                              width={50} // replace with the actual width
+                              height={50} // replace with the actual height
                             />
                           </div>
                           <div className="feature-box-content text-dark-gray fs-18">
@@ -902,7 +918,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         </div>
       </section>
 
-      <ImageSlider/>
+      <ImageSlider />
 
       {/* <section className="pt-0">
         <div className="container">
