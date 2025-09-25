@@ -56,7 +56,7 @@ const swiperRef = useRef<SwiperClass | null>(null);
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="p-0 top-space-margin position-relative overflow-hidden m-0" id="home">
+    <section className="p-0 top-space-margin position-relative overflow-hidden" id="home" style={{marginTop: "40px"}}>
       <Swiper
         onSwiper={(swiper) => (swiperRef.current = swiper)}
         modules={[Navigation, Autoplay, Keyboard]}

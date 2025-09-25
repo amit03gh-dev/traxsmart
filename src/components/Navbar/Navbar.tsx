@@ -259,15 +259,15 @@ export default function Navbar() {
               <Image
                 src="/media/tx_logo.png"
                 alt="logo"
-                width={120}
-                height={40}
+                width={227}
+                height={36}
                 className="alt-logo"
               />
               <Image
                 src="/media/tx_logo.png"
                 alt="logo"
-                width={120}
-                height={40}
+                width={227}
+                height={36}
                 className="mobile-logo"
               />
             </Link>
