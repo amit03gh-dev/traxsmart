@@ -1,58 +1,87 @@
-"use client";
+'use client';
 
-import { useState, useEffect } from "react";
-import Image from "next/image";
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Thumbs, Autoplay } from 'swiper/modules';
+import Image from 'next/image';
+import { useState } from 'react';
 
-interface ProductGalleryProps {
-  images: string[];
-  alt: string;
-  interval?: number; // autoplay interval in ms (default 3000)
-}
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/thumbs';
 
-export default function ProductGallery({ images, alt, interval = 3000 }: ProductGalleryProps) {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+type GalleryImage = {
+  src: string;
+  title: string;
+};
 
-  // Auto-play logic
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setSelectedIndex((prev) => (prev + 1) % images.length);
-    }, interval);
+const galleryImages: GalleryImage[] = [
+  { src: '/media/tsindia140/5.jpg', title: 'Rugged Built' },
+  { src: '/media/tsindia140/2.jpg', title: 'IP65 Rating' },
+  { src: '/media/tsindia140/3.jpg', title: '1000mAh' },
+  { src: '/media/tsindia140/8.jpg', title: '9-90v' },
+  { src: '/media/tsindia140/6.jpg', title: 'Multi Sensor Support' },
+];
 
-    return () => clearInterval(timer); // cleanup
-  }, [images.length, interval]);
+export default function ProductGallery() {
+  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   return (
-    <div className="row">
-      {/* Thumbnail Gallery */}
-      <div className="col-md-2 d-flex flex-column gap-3">
-        {images.map((img, i) => (
-          <button
-            key={i}
-            className={`border rounded p-1 bg-white ${
-              selectedIndex === i ? "border-primary" : "border-light"
-            }`}
-            onClick={() => setSelectedIndex(i)}
+    <div className="col-lg-7 pe-50px md-pe-15px md-mb-40px">
+      <div className="row overflow-hidden position-relative">
+        {/* Main Image Slider */}
+        <div className="col-12 col-lg-10 position-relative order-lg-2 product-image ps-30px md-ps-15px">
+          <Swiper
+            modules={[Navigation, Thumbs, Autoplay]}
+            spaceBetween={10}
+            loop={true}
+            autoplay={{ delay: 2000, disableOnInteraction: false }}
+            navigation={{
+              nextEl: '.slider-product-next',
+              prevEl: '.slider-product-prev',
+            }}
+            thumbs={{ swiper: thumbsSwiper }}
+            className="product-image-slider"
           >
-            <Image
-              src={img}
-              alt={`${alt} thumbnail ${i + 1}`}
-              width={80}
-              height={80}
-              className="img-fluid"
-            />
-          </button>
-        ))}
-      </div>
+            {galleryImages.map((img, i) => (
+              <SwiperSlide key={i} className="gallery-box">
+                <a href={img.src} data-group="lightbox-gallery" title={img.title}>
+                  <Image
+                    src={img.src}
+                    alt={img.title}
+                    width={600}
+                    height={600}
+                    className="w-100"
+                  />
+                </a>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
 
-      {/* Large Image */}
-      <div className="col-md-10 text-center">
-        <Image
-          src={images[selectedIndex]}
-          alt={alt}
-          width={500}
-          height={500}
-          className="img-fluid rounded shadow-sm"
-        />
+        {/* Thumbnail Slider */}
+        <div className="col-12 col-lg-2 order-lg-1 position-relative single-product-thumb">
+          <Swiper
+            onSwiper={setThumbsSwiper}
+            modules={[Navigation, Thumbs]}
+            spaceBetween={15}
+            slidesPerView="auto"
+            direction="vertical"
+            className="product-image-thumb slider-vertical"
+          >
+            {galleryImages.map((img, i) => (
+              <SwiperSlide key={i}>
+                <Image
+                  src={img.src}
+                  alt={img.title}
+                  width={120}
+                  height={120}
+                  className="w-100"
+                />
+              </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
       </div>
     </div>
   );
