@@ -73,7 +73,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         </div>
       </section>
 
-      <section className="pt-60px pb-0 md-pt-30px" style={{marginTop: "50px"}}>
+      <section className="pt-60px pb-0 md-pt-30px">
         <div className="container">
           <div className="row">
             <ProductGallery />
