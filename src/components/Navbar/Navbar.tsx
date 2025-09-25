@@ -230,13 +230,11 @@
 //   );
 // }
 
+"use client";
 
-
-'use client';
-
-import useBootstrapHover from '@/hooks/useBootstrapHover';
-import Image from 'next/image';
-import Link from 'next/link';
+import useBootstrapHover from "@/hooks/useBootstrapHover";
+import Image from "next/image";
+import Link from "next/link";
 
 export default function Navbar() {
   useBootstrapHover();
@@ -254,8 +252,8 @@ export default function Navbar() {
               <Image
                 src="/media/tx_logo.png"
                 alt="logo"
-                width={140}
-                height={50}
+                width={227}
+                height={36}
                 className="default-logo"
               />
               <Image
@@ -376,19 +374,18 @@ export default function Navbar() {
                     className="dropdown-menu"
                     aria-labelledby="navbarDropdownMenuLink1"
                   >
-                    
-                     <li>
+                    <li>
                       <Link href="/products/2g-gps" className="dropdown-item">
                         <i className="line-icon-Device-SyncwithCloud align-middle text-base-color"></i>
-                         2G GPS Trackers
-                       </Link>
-                     </li>
-                     <li>
-                       <Link href="/products/4g-gps" className="dropdown-item">
-                         <i className="line-icon-Device-SyncwithCloud align-middle text-base-color"></i>
-                         4G GPS Trackers
-                       </Link>
-                     </li>
+                        2G GPS Trackers
+                      </Link>
+                    </li>
+                    <li>
+                      <Link href="/products/4g-gps" className="dropdown-item">
+                        <i className="line-icon-Device-SyncwithCloud align-middle text-base-color"></i>
+                        4G GPS Trackers
+                      </Link>
+                    </li>
                   </ul>
                 </li>
               </ul>

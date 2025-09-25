@@ -2,6 +2,7 @@
 
 import SliderComp from '../Slider';
 import VerticalSlider from '../VerticalSlider';
+import HeroSlider from './HeroSlider';
 
 type SlideData = {
   src: string;
@@ -43,34 +44,35 @@ export default function HomeComp() {
   ];
 
   return (
-    <div id="home">
-      {/* Desktop / Tablet: Horizontal Slider */}
-      <div className="d-none d-lg-block">
-        <SliderComp
-          images={sliderImages}
-          slidesPerView={2}
-          width={800}
-          height={700}
-          gap={0}
-          showNavigation={false}
-          showPagination={false}
-          slidesPerGroup={2}
-          breakpoints={{
-            0: { slidesPerView: 1 }, // Mobile
-            768: { slidesPerView: 2 }, // Tablet & Desktop
-          }}
-        />
-      </div>
+    <HeroSlider/>
+    // <div id="home">
+    //   {/* Desktop / Tablet: Horizontal Slider */}
+    //   <div className="d-none d-lg-block">
+    //     <SliderComp
+    //       images={sliderImages}
+    //       slidesPerView={2}
+    //       width={800}
+    //       height={700}
+    //       gap={0}
+    //       showNavigation={false}
+    //       showPagination={false}
+    //       slidesPerGroup={2}
+    //       breakpoints={{
+    //         0: { slidesPerView: 1 }, // Mobile
+    //         768: { slidesPerView: 2 }, // Tablet & Desktop
+    //       }}
+    //     />
+    //   </div>
 
-      {/* Mobile: Vertical Slider */}
-      <div className="d-block d-lg-none">
-        <VerticalSlider
-          images={sliderImages}
-          height={300} // each slide height
-          autoplay={true}
-          showPagination={false}
-        />
-      </div>
-    </div>
+    //   {/* Mobile: Vertical Slider */}
+    //   <div className="d-block d-lg-none">
+    //     <VerticalSlider
+    //       images={sliderImages}
+    //       height={300} // each slide height
+    //       autoplay={true}
+    //       showPagination={false}
+    //     />
+    //   </div>
+    // </div>
   );
 }
