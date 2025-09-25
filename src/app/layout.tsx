@@ -10,6 +10,7 @@ import BootstrapProvider from './bootstrap-provider';
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer";
 
+
 // Load Inter font
 const inter = Inter({
   subsets: ["latin"],
