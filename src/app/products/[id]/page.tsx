@@ -55,7 +55,7 @@ export default function ProductPage({ params }: { params: { id: string } }) {
 
   return (
     <>
-      <section className="top-space-margin bg-gradient-very-light-gray pt-20px pb-20px ps-45px pe-45px sm-ps-15px sm-pe-15px">
+      <section className="top-space-margin bg-gradient-very-light-gray pt-20px pb-20px ps-45px pe-45px sm-ps-15px sm-pe-15px" style={{marginTop: "35px"}}>
         <div className="container-fluid">
           <div className="row align-items-center">
             <div className="col-12 breadcrumb breadcrumb-style-01 fs-14">
