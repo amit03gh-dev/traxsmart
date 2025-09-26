@@ -9,21 +9,10 @@ import type { Swiper as SwiperType } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/thumbs';
+import { GalleryImage } from '@/types/product';
 
-type GalleryImage = {
-  src: string;
-  title: string;
-};
 
-const galleryImages: GalleryImage[] = [
-  { src: '/media/tsindia140/5.jpg', title: 'Rugged Built' },
-  { src: '/media/tsindia140/2.jpg', title: 'IP65 Rating' },
-  { src: '/media/tsindia140/3.jpg', title: '1000mAh' },
-  { src: '/media/tsindia140/8.jpg', title: '9-90v' },
-  { src: '/media/tsindia140/6.jpg', title: 'Multi Sensor Support' },
-];
-
-export default function ProductGallery() {
+export default function ProductGallery({galleryImages}:{galleryImages: GalleryImage[]}) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
 
   return (

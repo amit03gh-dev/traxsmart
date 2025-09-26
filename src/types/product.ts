@@ -28,3 +28,10 @@ export interface Product {
     };
   };
 }
+
+
+
+export type GalleryImage = {
+  src: string;
+  title: string;
+};
