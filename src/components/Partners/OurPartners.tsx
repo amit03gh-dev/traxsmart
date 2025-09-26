@@ -1,6 +1,8 @@
 'use client';
 
-import ImageSlider from "../Slider";
+import ImageSlider from "../Product/ImageSlider";
+
+// import ImageSlider from "../Slider";
 
 // import ImageSlider from "../ImageSlider";
 
@@ -19,11 +21,12 @@ export default function OurPartnersComp() {
     <section className="py-5">
       <div className="container">
         {/* <h2 className="text-center fw-bold mb-4">Our Empanelments</h2> */}
-         <div className="text-center mb-50px">
+         {/* <div className="text-center mb-50px">
             <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">Our Empanelments</span>
-          </div>
+          </div> */}
         <div className="col swiper text-center feather-shadow">
-          <ImageSlider
+          <ImageSlider/>
+          {/* <ImageSlider
             images={sliderImages}
             slidesPerView={4}
             width={100}
@@ -40,7 +43,7 @@ export default function OurPartnersComp() {
               1200: { slidesPerView: 5.5 } // Desktop
             }}
             imageStyle="rounded-circle border shadow-sm bg-white p-2"
-          />
+          /> */}
         </div>
       </div>
     </section>

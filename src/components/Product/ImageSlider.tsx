@@ -1,10 +1,6 @@
 'use client';
 
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
 import Image from 'next/image';
-
-import 'swiper/css';
 
 const clientLogos = [
   '/media/clients/1.png',
@@ -18,57 +14,52 @@ const clientLogos = [
 ];
 
 export default function ImageSlider() {
-  return (
-    <section className="pt-0">
-      <div className="container">
-        <div className="row">
-          <div className="row position-relative clients-style-08">
-            {/* Title */}
-            <div className="text-center mb-50px">
-              <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">
-                Our Empanelments
-              </span>
-            </div>
+  // Duplicate logos for seamless loop
+  const logos = [...clientLogos, ...clientLogos];
 
-            {/* Continuous Slider */}
-            <div className="col text-center feather-shadow">
-              <Swiper
-                modules={[Autoplay]}
-                slidesPerView={2}
-                spaceBetween={30}
-                loop={true}
-                speed={5000} // duration of full loop
-                autoplay={{
-                  delay: 0, // no waiting between transitions
-                  disableOnInteraction: false,
-                  pauseOnMouseEnter: false,
-                }}
-                allowTouchMove={false}
-                breakpoints={{
-                  576: { slidesPerView: 5 },
-                  768: { slidesPerView: 6 },
-                  1200: { slidesPerView: 7 },
-                }}
-                className="marquee-slide"
-              >
-                {clientLogos.map((logo, index) => (
-                  <SwiperSlide key={index}>
-                    <a href="#">
-                      <Image
-                        src={logo}
-                        alt={`Client ${index + 1}`}
-                        width={120}
-                        height={80}
-                        className="w-80"
-                      />
-                    </a>
-                  </SwiperSlide>
-                ))}
-              </Swiper>
-            </div>
+  return (
+    <section className="pt-0 overflow-hidden">
+      <div className="container">
+        <div className="text-center mb-50px">
+          <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">
+            Our Empanelments
+          </span>
+        </div>
+
+        <div className="marquee-wrapper">
+          <div className="marquee">
+            {logos.map((logo, index) => (
+              <div className="marquee-item" key={index}>
+                <Image src={logo} alt={`Client ${index + 1}`} width={120} height={80} />
+              </div>
+            ))}
           </div>
         </div>
       </div>
+
+      <style jsx>{`
+        .marquee-wrapper {
+          overflow: hidden;
+          position: relative;
+        }
+        .marquee {
+          display: flex;
+          width: max-content;
+          animation: scroll 20s linear infinite;
+        }
+        .marquee-item {
+          margin-right: 30px;
+          flex: 0 0 auto;
+        }
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+      `}</style>
     </section>
   );
 }

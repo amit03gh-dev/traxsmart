@@ -375,16 +375,16 @@ export default function Navbar() {
                     aria-labelledby="navbarDropdownMenuLink1"
                   >
                     <li>
-                      <Link href="/products/2g-gps" className="dropdown-item">
+                      <a href="/products/2g-gps" className="dropdown-item" target="_blank" rel="noopener noreferrer">
                         <i className="line-icon-Device-SyncwithCloud align-middle text-base-color"></i>
                         2G GPS Trackers
-                      </Link>
+                      </a>
                     </li>
                     <li>
-                      <Link href="/products/4g-gps" className="dropdown-item">
+                      <a href="/products/4g-gps" className="dropdown-item" target="_blank" rel="noopener noreferrer">
                         <i className="line-icon-Device-SyncwithCloud align-middle text-base-color"></i>
                         4G GPS Trackers
-                      </Link>
+                      </a>
                     </li>
                   </ul>
                 </li>
