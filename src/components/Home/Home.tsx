@@ -1,81 +1,61 @@
 // 'use client';
 
-// import { useEffect, useState } from 'react';
+// import { useEffect, useState, useRef } from 'react';
 // import HeroSlider from './HeroSlider';
 // import styles from './home.module.css';
 
 // export default function HomeComp() {
 //   const [position, setPosition] = useState({ x: 0, y: 0 });
 //   const [isHovering, setIsHovering] = useState(false);
+//   const homeRef = useRef<HTMLDivElement>(null);
 
 //   useEffect(() => {
+//     const homeElement = homeRef.current;
+//     if (!homeElement) return;
+
 //     const updatePosition = (e: MouseEvent) => {
-//       setPosition({ x: e.clientX, y: e.clientY });
+//       const rect = homeElement.getBoundingClientRect();
+//       setPosition({
+//         x: e.clientX - rect.left, // relative X
+//         y: e.clientY - rect.top,  // relative Y
+//       });
 //     };
 
 //     const handleMouseEnter = () => setIsHovering(true);
-//     const handleMouseLeave = () => setIsHovering(false);
+//     const handleMouseLeave = () => {
+//       setIsHovering(false);
+//       setPosition({ x: -100, y: -100 }); // hide cursor outside
+//     };
 
-//     // Add event listeners to the entire component
-//     const homeElement = document.getElementById('home');
-//     if (homeElement) {
-//       homeElement.addEventListener('mouseenter', handleMouseEnter);
-//       homeElement.addEventListener('mouseleave', handleMouseLeave);
-//     }
-
-//     window.addEventListener('mousemove', updatePosition);
+//     homeElement.addEventListener('mousemove', updatePosition);
+//     homeElement.addEventListener('mouseenter', handleMouseEnter);
+//     homeElement.addEventListener('mouseleave', handleMouseLeave);
 
 //     return () => {
-//       window.removeEventListener('mousemove', updatePosition);
-//       if (homeElement) {
-//         homeElement.removeEventListener('mouseenter', handleMouseEnter);
-//         homeElement.removeEventListener('mouseleave', handleMouseLeave);
-//       }
+//       homeElement.removeEventListener('mousemove', updatePosition);
+//       homeElement.removeEventListener('mouseenter', handleMouseEnter);
+//       homeElement.removeEventListener('mouseleave', handleMouseLeave);
 //     };
 //   }, []);
 
 //   return (
-//     <div id="home" className={styles.cursorArea}>
-//       {/* Custom Cursor - Dual Circle Animation */}
-//       <div className={`${styles.cursor} ${isHovering ? styles.cursorHover : ''}`}>
-//         {/* Big circle */}
-//         <div 
-//           className={styles.cursorBallBig}
-//           style={{
-//             transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
-//           }}
-//         >
-//           <svg height="30" width="30">
-//             <circle cx="15" cy="15" r="12" strokeWidth="0"></circle>
-//           </svg>
-//         </div>
-        
-//         {/* Small circle */}
-//         <div 
-//           className={styles.cursorBallSmall}
-//           style={{
-//             transform: `translate3d(${position.x}px, ${position.y}px, 0)`,
-//           }}
-//         >
-//           <svg height="10" width="10">
-//             <circle cx="5" cy="5" r="4" strokeWidth="0"></circle>
-//           </svg>
-//         </div>
-
-//         {/* Drag text */}
+//     <div id="home" ref={homeRef} className={styles.cursorArea}>
+//       {/* Custom Cursor */}
+//       <div
+//         className={`${styles.customCursor} ${isHovering ? styles.customCursorHover : ''}`}
+//         style={{
+//           left: `${position.x}px`,
+//           top: `${position.y}px`,
+//           opacity: isHovering ? 1 : 0, // fades out outside
+//         }}
+//       >
 //         {isHovering && (
-//           <div 
-//             className={`${styles.cursorText} ${styles.cursorTextVisible}`}
-//             style={{
-//               left: `${position.x}px`,
-//               top: `${position.y}px`,
-//             }}
-//           >
-//             DRAG
-//           </div>
+//           <span className={`${styles.cursorText} ${styles.cursorTextVisible}`}>
+//             {" < DRAG >"}
+//           </span>
 //         )}
 //       </div>
-      
+
 //       <HeroSlider />
 //     </div>
 //   );
@@ -85,8 +65,10 @@
 
 
 
+
 'use client';
 
+import MagicCursor from '../common/MagicCursor';
 // import SliderComp from '../Slider';
 // import VerticalSlider from '../VerticalSlider';
 import HeroSlider from './HeroSlider';
@@ -131,7 +113,10 @@ export default function HomeComp() {
   // ];
 
   return (
+    <>
+    <MagicCursor/>
     <HeroSlider/>
+    </>
     // <div id="home">
     //   {/* Desktop / Tablet: Horizontal Slider */}
     //   <div className="d-none d-lg-block">
