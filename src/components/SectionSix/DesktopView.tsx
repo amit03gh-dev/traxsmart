@@ -77,7 +77,7 @@ export default function DesktopView({
               src={features[selectedFeature].image}
               alt={selectedFeature}
               fill
-              className="img-fluid rounded shadow-lg"
+              className="img-fluid rounded"
               style={{ objectFit: "contain" }}
             />
           </div>
