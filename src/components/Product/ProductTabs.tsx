@@ -137,12 +137,7 @@ export default function ProductTabs() {
                               transform: "translate3d(0px, 0px, 0px)",
                             }}
                           >
-                            {/* <img
-                                      src="/media/tsindia140/fleet.jpg"
-                                      className="border-radius-6px w-100"
-                                      alt=""
-                                      data-no-retina=""
-                                    /> */}
+                            
                             <Image
                               src="/media/tsindia140/fleet.jpg"
                               alt=""
@@ -637,12 +632,6 @@ export default function ProductTabs() {
                   <div className="col-auto mt-60px pt-15px pb-15px ps-40px pe-40px md-ps-25px md-pe-25px bg-solitude-blue border-radius-100px">
                     <div className="feature-box feature-box-left-icon-middle">
                       <div className="feature-box-icon me-10px">
-                        {/* <img
-                                  src="images/demo-green-energy-home-icon-06.html"
-                                  alt=""
-                                  data-no-retina=""
-                                /> */}
-
                         <Image
                           src="/images/demo-green-energy-home-icon-06.html" // make sure this is a valid image format (png/jpg/svg)
                           alt=""
