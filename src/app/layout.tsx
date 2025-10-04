@@ -30,11 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body  className={`${inter.variable} font-sans`}>
+      <body  className={`is-touchable ${inter.variable} font-sans`} data-mobile-nav-style="classic">
         <Navbar />
         <BootstrapProvider>
           {/* Push content down so it doesn’t overlap the sticky navbar */}
-          <main data-mobile-nav-style="classic">{children}</main>
+          <main>{children}</main>
         </BootstrapProvider>
         <Footer />
       </body>

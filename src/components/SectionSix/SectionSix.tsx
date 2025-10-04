@@ -115,7 +115,7 @@ export default function SectionSix() {
               <li className="nav-item">
                 <a
                   data-bs-toggle="tab"
-                  // href="#tab_four1"
+                  href="#tab_four1"
                   className="nav-link d-flex align-items-center active"
                 >
                   <i className="feather icon-feather-compass icon-extra-medium text-dark-gray"></i>
@@ -126,7 +126,7 @@ export default function SectionSix() {
                 <a
                   className="nav-link"
                   data-bs-toggle="tab"
-                  // href="#tab_four2"
+                  href="#tab_four2"
                 >
                   <i className="feather icon-feather-wifi icon-extra-medium text-dark-gray"></i>
                   <span>m2m eSIM Solutions</span>
@@ -136,7 +136,7 @@ export default function SectionSix() {
                 <a
                   className="nav-link"
                   data-bs-toggle="tab"
-                  // href="#tab_four3"
+                  href="#tab_four3"
                 >
                   <i className="feather icon-feather-monitor icon-extra-medium text-dark-gray"></i>
                   <span>Software Solutions</span>
@@ -146,7 +146,7 @@ export default function SectionSix() {
                 <a
                   className="nav-link"
                   data-bs-toggle="tab"
-                  // href="#tab_four4"
+                  href="#tab_four4"
                 >
                   <i className="feather icon-feather-settings icon-extra-medium text-dark-gray"></i>
                   <span>Custom Manufacturing</span>

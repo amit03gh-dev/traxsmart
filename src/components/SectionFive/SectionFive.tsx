@@ -60,13 +60,13 @@ export default function SectionFive({ data }: props) {
             <div className="col-lg-2 d-flex justify-content-center justify-content-xl-end gap-2">
               <button
               className="btn btn-light rounded-circle shadow nav-prev"
-              style={{ width: 48, height: 48 }}
+              style={{ width: 50, height: 50 }}
             >
-              <i className="bi bi-arrow-left text-center m-0"></i>
+              <i className="bi bi-arrow-left text-center m-0 fw-bold"></i>
             </button>
             <button
               className="btn btn-light rounded-circle shadow nav-next text-center"
-              style={{ width: 48, height: 48 }}
+              style={{ width: 50, height: 50 }}
             >
               <i className="bi bi-arrow-right m-0"></i>
             </button>
@@ -103,14 +103,16 @@ export default function SectionFive({ data }: props) {
                     <div
                       style={{
                         position: "relative",
-                        width: "100%",
-                        height: 200,
+                        width: 332.24,
+                        height: 243.65,
                       }}
                     >
                       <Image
                         src={ind.img}
                         alt={ind.title}
                         fill
+                        // width={332.24}
+                        // height={243.65}
                         style={{ objectFit: "cover" }}
                       />
                     </div>
