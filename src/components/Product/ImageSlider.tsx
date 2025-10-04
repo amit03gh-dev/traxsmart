@@ -100,8 +100,8 @@ export default function ImageSlider() {
                 <Image
                   src={logo}
                   alt={`Client ${index + 1}`}
-                  width={120}
-                  height={120}
+                  width={147.42}
+                  height={147.42}
                 />
               </div>
             ))}
