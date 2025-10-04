@@ -65,13 +65,6 @@
 //   );
 // }
 
-
-
-
-
-
-
-
 "use client";
 
 import Image from "next/image";
@@ -92,22 +85,28 @@ export default function ImageSlider() {
   const logos = [...clientLogos, ...clientLogos];
 
   return (
-    <>        
-        <div className="marquee-wrapper">
-          <div className="marquee">
-            {logos.map((logo, index) => (
-              <div className="marquee-item" key={index}>
-                <Image
-                  src={logo}
-                  alt={`Client ${index + 1}`}
-                  width={147.42}
-                  height={147.42}
-                  className="w-80"
-                />
-              </div>
-            ))}
-          </div>
+    <>
+      <div className="text-center mb-50px">
+        <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">
+          Our Empanelments
+        </span>
+      </div>
+
+      <div className="marquee-wrapper">
+        <div className="marquee">
+          {logos.map((logo, index) => (
+            <div className="marquee-item" key={index}>
+              <Image
+                src={logo}
+                alt={`Client ${index + 1}`}
+                width={147.42}
+                height={147.42}
+                className="w-80"
+              />
+            </div>
+          ))}
         </div>
+      </div>
       <style jsx>{`
         .marquee-wrapper {
           overflow: hidden;

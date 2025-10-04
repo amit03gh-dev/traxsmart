@@ -93,11 +93,11 @@ export default function ProductPage({ params }: { params: { id: string } }) {
         </div>
       </section>
 
-      <section id="tab" className="pt-4 sm-pt-40px">
+      <section id="tab">
         <ProductTabs/>
+      <ImageSlider />
       </section>
 
-      <ImageSlider />
 
       {/* <section className="pt-0">
         <div className="container">
