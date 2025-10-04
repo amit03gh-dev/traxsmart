@@ -34,7 +34,7 @@ export default function RootLayout({
         <Navbar />
         <BootstrapProvider>
           {/* Push content down so it doesn’t overlap the sticky navbar */}
-          <main data-mobile-nav-style="classic" className="pt-5">{children}</main>
+          <main data-mobile-nav-style="classic">{children}</main>
         </BootstrapProvider>
         <Footer />
       </body>

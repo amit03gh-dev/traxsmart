@@ -4,21 +4,60 @@ import Image from "next/image";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import { useEffect } from "react";
 
-export default function EsimSection() {
+// ================== TYPES ==================
+type EsimFeature = {
+  img: string;
+  title: string;
+  desc: string;
+};
+
+type EsimCTA = {
+  img: string;
+  alt: string;
+  text: string;
+  link: {
+    href: string;
+    label: string;
+  };
+};
+
+type EsimData = {
+  tagline: string;
+  title: string;
+  description: string;
+  mainImage: {
+    src: string;
+    alt: string;
+    width: number;
+    height: number;
+  };
+  features: EsimFeature[];
+  // cta: EsimCTA;
+};
+
+type Props = {
+  data: EsimData;
+};
+
+// ================== COMPONENT ==================
+export default function EsimSection({ data }: Props) {
   const scrollY = useMotionValue(0);
-  const scrollTransform = useTransform(scrollY, [0, 1], [-30, 30]); // small float effect for image
+  const scrollTransform = useTransform(scrollY, [0, 1], [-30, 30]);
 
   useEffect(() => {
     const handleScroll = () => {
-      scrollY.set(window.scrollY / (document.body.scrollHeight - window.innerHeight));
+      scrollY.set(
+        window.scrollY / (document.body.scrollHeight - window.innerHeight)
+      );
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrollY]);
 
   return (
-    <section style={{ paddingBottom: "0px" }}>
-      <div className="container-lg mb-6 md-mb-10px" style={{ maxWidth: "1140px" }}>
+    <section className="position-relative">
+      <div
+        className="container">
         {/* Row 1: Intro with text + image */}
         <div className="row justify-content-center mb-6 md-mb-10px">
           <motion.div
@@ -31,36 +70,36 @@ export default function EsimSection() {
             <div className="mb-10px">
               <span className="w-30px h-2px fs-15 d-inline-block bg-base-color me-5px align-middle"></span>
               <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">
-                Intelligent. Secure. Flexible.
+                {data.tagline}
               </span>
             </div>
             <h2 className="text-dark-gray fw-700 ls-minus-2px">
-              Ventel - m2m IoT connectivity services
+              {data.title}
             </h2>
             <p className="w-85 lg-w-100 text-dark-gray">
-              Ventel eSIM-enabled M2M connectivity solution revolutionizes IoT
-              services for businesses by optimizing asset control and management. With remote
-              management features and expedited services, our solution prioritizes M2M
-              connectivity and security-by-design for safeguarding customer data.
+              {data.description}
             </p>
           </motion.div>
 
           {/* Right image */}
           <motion.div
-            className="col-xl-4 col-lg-5 offset-xl-1 col-12 overflow-hidden animation-float"
+            className="col-xl-4 col-lg-5 offset-xl-1 col-12"
             style={{ y: scrollTransform }}
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, ease: "easeOut" }}
           >
-            <Image
-              src="/media/e-sim-blue.png"
-              alt="Ventel IoT eSIM"
-              width={360}
-              height={360}
-              className="img-fluid"
+            <div className="overflow-hidden animation-float">
+              <Image
+              src={data.mainImage.src}
+              alt={data.mainImage.alt}
+              width={data.mainImage.width}
+              height={data.mainImage.height}
+              className="w-80 img-fluid"
             />
+            </div>
+            
           </motion.div>
         </div>
 
@@ -72,13 +111,16 @@ export default function EsimSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.8, ease: "easeOut" }}
         >
-          {[1, 2, 3, 4].map((i) => (
-            <div key={i} className="col custom-icon-with-text-style-02 border-end xs-border-end-0 md-mb-30px">
+          {data.features.map((feature, i) => (
+            <div
+              key={i}
+              className="col custom-icon-with-text-style-02 border-end xs-border-end-0 md-mb-30px"
+            >
               <div className="feature-box last-paragraph-no-margin">
                 <div className="feature-box-icon">
                   <Image
-                    src={`/media/esim/${i}.png`}
-                    alt=""
+                    src={feature.img}
+                    alt={feature.title}
                     width={60}
                     height={60}
                     className="mb-3"
@@ -86,21 +128,9 @@ export default function EsimSection() {
                 </div>
                 <div className="feature-box-content">
                   <span className="d-block fs-20 fw-600 text-dark-gray mb-10px">
-                    {i === 1 && "Space-Saving Design"}
-                    {i === 2 && "Enhanced Security"}
-                    {i === 3 && "Remote Provisioning"}
-                    {i === 4 && "AIS140 Compliant"}
+                    {feature.title}
                   </span>
-                  <p className="w-80 xl-w-100 mx-auto">
-                    {i === 1 &&
-                      "Sleek and modern, offering more features in a compact form. Enjoy a lighter, more streamlined experience without compromising on performance."}
-                    {i === 2 &&
-                      "Your privacy matters! eSIMs offer state-of-the-art security features, keeping your personal information safe from theft and loss."}
-                    {i === 3 &&
-                      "Say goodbye to fumbling with physical SIM cards! With eSIM, effortlessly switch between carriers and plans at the touch of a button."}
-                    {i === 4 &&
-                      "Our DoT Certified M2M eSIMs ensure compliance with AIS140 standards, making them ideal for public transport and connected vehicle applications."}
-                  </p>
+                  <p className="w-80 xl-w-100 mx-auto">{feature.desc}</p>
                 </div>
               </div>
             </div>
@@ -109,7 +139,7 @@ export default function EsimSection() {
       </div>
 
       {/* Footer CTA */}
-      <motion.div
+      {/* <motion.div
         className="container-fluid bg-theme"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -118,22 +148,28 @@ export default function EsimSection() {
       >
         <div className="row align-items-center justify-content-center g-0">
           <div className="col-auto d-flex align-items-center">
-            <Image src="/media/support.png" alt="support" width={50} height={50} className="w-15" />
+            <Image
+              src={data.cta.img}
+              alt={data.cta.alt}
+              width={50}
+              height={50}
+              className="w-15"
+            />
             <div className="fs-17 lh-26 last-paragraph-no-margin text-white pt-15px pb-15px fw-500">
               <p>
-                Save your precious time and effort spent for finding a solution.
+                {data.cta.text}{" "}
                 <a
-                  href="https://forms.gle/9TW51UbmnRzjowat7"
+                  href={data.cta.link.href}
                   target="_blank"
                   className="text-decoration-line-bottom text-white"
                 >
-                  Let&apos;s connect
+                  {data.cta.link.label}
                 </a>
               </p>
             </div>
           </div>
         </div>
-      </motion.div>
+      </motion.div> */}
     </section>
   );
 }

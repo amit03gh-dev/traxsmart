@@ -71,7 +71,7 @@ export default function HeroSlider() {
   };
 
   return (
-    <section className="p-0 top-space-margin position-relative overflow-hidden" id="home" style={{marginTop: "40px"}}>
+    <section className="p-0 top-space-margin position-relative overflow-hidden" id="home">
       <Swiper
         modules={[Navigation, Pagination, Autoplay, Keyboard]}
         slidesPerView={1}
