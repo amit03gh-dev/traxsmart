@@ -148,8 +148,8 @@ const industries = [
       <HomeComp />
 
       {/* Product Section */}
-      {/* <AIS140 {...ais140Data} /> */}
-      <AIS140  />
+      <AIS140 {...ais140Data} />
+      {/* <AIS140  /> */}
 
       {/* Partners */}
       {/* <OurPartnersComp /> */}
@@ -158,7 +158,6 @@ const industries = [
       <EsimSection data={esimData} />
       <SectionSeven data={ctaData}/>
 
-      {/* Industries */}
       <SectionFour data={heroData} />
 
       {/* Case Studies */}

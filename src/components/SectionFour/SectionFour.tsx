@@ -239,7 +239,6 @@ export default function SectionFour({ data }: Props) {
           {/* Left: Large image with Play Button */}
           <motion.div
             className="col-xxl-7 col-lg-6 cover-background md-h-600px sm-h-400px"
-            style={{ minHeight: "90vh", y: floatY }}
           >
             <div style={{ position: "relative", width: "100%", height: "100%" }}>
               <Image
@@ -289,7 +288,6 @@ export default function SectionFour({ data }: Props) {
             <h3 className="text-dark-gray fw-700 ls-minus-2px w-85 xxl-w-100">{data.title}</h3>
             <p className="w-80 sm-w-100 text-dark-gray">{data.description}</p>
 
-            {/* Features */}
             <div className="mb-20px">
               {data.features.map((feature, i) => (
                 <div key={i} className="icon-with-text-style-08 mb-10px">
@@ -305,7 +303,6 @@ export default function SectionFour({ data }: Props) {
               ))}
             </div>
 
-            {/* Buttons & Contact */}
             <div className="d-inline-flex flex-wrap">
               <a
                 href={data.button.href}
@@ -338,6 +335,8 @@ export default function SectionFour({ data }: Props) {
               </div>
             </div>
           </motion.div>
+
+          
         </div>
       </div>
 
