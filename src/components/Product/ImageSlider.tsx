@@ -102,6 +102,7 @@ export default function ImageSlider() {
                   alt={`Client ${index + 1}`}
                   width={147.42}
                   height={147.42}
+                  className="w-80"
                 />
               </div>
             ))}
