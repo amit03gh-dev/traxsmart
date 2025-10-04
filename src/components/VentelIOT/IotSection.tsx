@@ -121,8 +121,8 @@ export default function EsimSection({ data }: Props) {
                   <Image
                     src={feature.img}
                     alt={feature.title}
-                    width={60}
-                    height={60}
+                    width={76.8}
+                    height={76.8}
                     className="mb-3"
                   />
                 </div>
