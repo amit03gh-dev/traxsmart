@@ -11,6 +11,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer";
 import navbarService from "@/services/Navbar.service";
 import footerService from "@/services/Footer.service";
+import ScrollProgress from "@/components/common/ScrollProgress";
 export const revalidate = 7776000;
 
 // Load Inter font
@@ -42,6 +43,7 @@ export default async function RootLayout({
           <main>{children}</main>
         </BootstrapProvider>
         <Footer data={footerData.data} />
+        <ScrollProgress/>
       </body>
     </html>
   );

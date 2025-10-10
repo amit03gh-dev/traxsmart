@@ -2922,7 +2922,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
 /* Scroll progress */
 .scroll-progress {
   position: fixed;
-  right: 20px;
+  right: 18px;
   z-index: 111;
   top: 50%;
   -webkit-transition: all 0.3s linear;
@@ -2942,6 +2942,8 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: transparent;
+  border: none;
 }
 .scroll-progress .scroll-line {
   width: 2px;
@@ -2950,12 +2952,13 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   background-color: rgba(255, 255, 255, 0.15);
   color: inherit;
   display: block;
+  margin-right: 2px;
 }
 .scroll-progress .scroll-point {
   display: inline-block;
   width: 2px;
   position: absolute;
-  background-color: var(--white);
+  background-color: rgba(255, 255, 255, 0.4);
   top: 0px;
   left: 0px;
 }
@@ -2965,7 +2968,7 @@ input:focus, select:focus, textarea:focus, .form-control:focus {
   writing-mode: vertical-lr;
   margin-bottom: 15px;
   color: var(--white);
-  font-size: 11px;
+  font-size: 12px;
   text-transform: uppercase;
 }
 .scroll-progress.scroll-simple {
