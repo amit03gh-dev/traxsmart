@@ -1,8 +1,5 @@
 import React from "react";
-import { motion, useMotionValue, useTransform } from "framer-motion";
-import TX_ListItemViewTwo from "../ListItemView/TX_ListItemViewTwo";
-import ButtonViewOne from "../ButtonView/ButtonViewOne";
-import TX_ContactView1 from "../ContactView/TX_ContactView1";
+import { motion} from "framer-motion";
 
 interface SectionHeaderProps {
   header?: string; // made optional
@@ -34,13 +31,6 @@ interface Props {
 const TX_SectionHeaderType1 = ({ data }: Props) => {
   const { header, title, description} = data;
   return (
-    // <motion.div
-    //   className="col-xl-5 col-lg-6 col-md-9 md-mb-50px text-center text-lg-start"
-    //   initial={{ opacity: 0, y: 50 }}
-    //   whileInView={{ opacity: 1, y: 0 }}
-    //   viewport={{ once: true, amount: 0.5 }}
-    //   transition={{ duration: 0.8, ease: "easeOut" }}
-    // >
     <>
       <div className="mb-10px">
         <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">
@@ -63,21 +53,7 @@ const TX_SectionHeaderType1 = ({ data }: Props) => {
       >
         {description}
       </motion.p>
-
-      {/* Feature boxes */}
-      {/* <div className="mb-20px">
-        {listItems?.map((f, i) => (
-          <TX_ListItemViewTwo key={i} item={f} />
-        ))}
-      </div> */}
-
-      {/* Buttons & Contact */}
-      {/* <div className="d-inline-flex flex-wrap">
-       {cta && <ButtonViewOne data={cta} />} 
-       {contact && <TX_ContactView1 data={contact} />} 
-      </div> */}
       </>
-    // </motion.div>
   );
 };
 

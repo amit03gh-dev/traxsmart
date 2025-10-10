@@ -23,6 +23,7 @@ const PackagingAndShipping: React.FC<PackagingAndShippingProps> = ({
   componentType,
   data,
 }) => {
+  console.log("component is >>>>>>", componentType)
   return (
     <div className="row">
       {data.map((item, index) => (

@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import Image from "next/image";
 import TSX_CtaBanner1 from "../common/CtaBanner/TSX_CtaBanner1";
 
 // Types

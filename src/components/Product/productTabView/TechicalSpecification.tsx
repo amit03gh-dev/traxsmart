@@ -7,6 +7,7 @@ interface Props {
 }
 
 const TechicalSpecification = ({componentType, data}: Props) => {
+  console.log("component is>>",componentType)
    const techniacalSpecification = data || [];
   return (
     <TX_StripeTableViewTypeOne data={techniacalSpecification}/>

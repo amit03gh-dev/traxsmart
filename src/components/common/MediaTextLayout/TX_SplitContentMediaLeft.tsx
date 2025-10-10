@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Image from "next/image";
-import { motion, useMotionValue, useTransform } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 import TX_SectionHeaderType1 from "../SectionHeader/TX_SectionHeaderType1";
 import ButtonViewOne from "../ButtonView/ButtonViewOne";
 import TX_ContactView1 from "../ContactView/TX_ContactView1";
@@ -47,7 +47,7 @@ export default function TX_SplitContentMediaLeft({ data }: Props) {
   const [showVideo, setShowVideo] = useState(false);
 
   const scrollY = useMotionValue(0);
-  const floatY = useTransform(scrollY, [0, 1], [-30, 30]);
+  // const floatY = useTransform(scrollY, [0, 1], [-30, 30]);
 
   useEffect(() => {
     const handleScroll = () => {

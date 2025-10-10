@@ -7,7 +7,7 @@ interface Props {
 }
 
 const FeaturesTab = ({ componentType, data }: Props) => {
-
+console.log("component is>", componentType)
   // Ensure data is an array (handle nested object)
   const features = data || [];
 
