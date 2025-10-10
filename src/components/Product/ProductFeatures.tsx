@@ -17,7 +17,6 @@ export default function ProductFeatures({ features }: ProductFeaturesProps) {
               i % 2 === 0 ? "bg-dark-subtle" : "bg-light-subtle"
             } border-bottom`}
           >
-            {/* {console.log("index is >>>>>",i)} */}
             {/* Feature Key */}
             <div className="col-md-4 fw-bold py-3 text-dark">
               {f.key}:

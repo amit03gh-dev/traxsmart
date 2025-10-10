@@ -1,0 +1,56 @@
+{
+  "logo": {
+    "src": "/media/tx_logo.png",
+    "alt": "Recruitment Logo",
+    "width": 168,
+    "height": 44,
+    "link": "demo-recruitment.html"
+  },
+  "address": "301 Sondanella, Eden walk, Orchard view, London, UK",
+  "contact": {
+    "phone": "+1 234 567 8910",
+    "email": "info@domain.com"
+  },
+  "sections": [
+    {
+      "title": "Get in Touch",
+      "links": [
+        { "label": "About", "href": "demo-recruitment-about.html" },
+        { "label": "How it work", "href": "demo-recruitment-services.html" },
+        { "label": "Resources", "href": "demo-recruitment-jobs.html" },
+        { "label": "Blog", "href": "demo-recruitment-blog.html" },
+        { "label": "Contact", "href": "demo-recruitment-contact.html" }
+      ]
+    },
+    {
+      "title": "Locations",
+      "links": [
+        { "label": "Middle east", "href": "demo-recruitment-contact.html" },
+        { "label": "Australia", "href": "demo-recruitment-contact.html" },
+        { "label": "Canada", "href": "demo-recruitment-contact.html" },
+        { "label": "Europe", "href": "demo-recruitment-contact.html" },
+        { "label": "United States", "href": "demo-recruitment-contact.html" }
+      ]
+    },
+    {
+      "title": "Explores",
+      "links": [
+        { "label": "Collaborate", "href": "demo-recruitment-about.html" },
+        { "label": "Communities", "href": "demo-recruitment-about.html" },
+        { "label": "Recruiter", "href": "demo-recruitment-contact.html" },
+        { "label": "Events", "href": "demo-recruitment-services.html" },
+        { "label": "Forum", "href": "demo-recruitment-contact.html" }
+      ]
+    },
+    {
+      "title": "Recruitment",
+      "links": [
+        { "label": "The process", "href": "demo-recruitment-services.html" },
+        { "label": "Guides & trainings", "href": "demo-recruitment-about.html" },
+        { "label": "Hiring advice", "href": "demo-recruitment-about.html" },
+        { "label": "Why choose us", "href": "demo-recruitment-services.html" },
+        { "label": "Case studies", "href": "demo-recruitment-jobs.html" }
+      ]
+    }
+  ]
+}

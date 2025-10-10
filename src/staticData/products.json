@@ -1,154 +1,603 @@
 [
-    {
-        "id": "2g-gps",
-        "name": "TSINDIA 140 (2G)",
-        "category": "GPS Devices",
-        "description": "The TSindia140 GPS Device is a rugged, AIS140 & BIS16833-certified tracker designed for all vehicle types. With IP65 protection, a 1000mAh backup battery, fast 30-second GPS cold start, and support for SOS panic button, driver behavior monitoring, and fuel/temperature/load sensors, it offers reliable performance and complete fleet control in any environment.",
-        "images": [
-            "https://traxsmart.in/media/tsindia140/2.jpg",
-            "https://traxsmart.in/media/tsindia140/3.jpg",
-            "https://traxsmart.in/media/tsindia140/8.jpg",
-            "https://traxsmart.in/media/tsindia140/5.jpg",
-            "https://traxsmart.in/media/tsindia140/6.jpg"
-        ],
-        "features": [
-            {
-                "key": "Certification",
-                "value": "AIS140 & BIS16833 Certified"
-            },
-            {
-                "key": "Protocol Support",
-                "value": "Government-mandated VLT and emergency button protocols"
-            },
-            {
-                "key": "Supported Alerts",
-                "value": "SOS, Over speeding, Harsh braking, Power cut, Geofence entry/exit"
-            }
-        ],
-        "technical": {
-            "Network": "2G GSM",
-            "Battery": "1000mAh",
-            "Dimensions": "85 x 50 x 20 mm",
-            "Weight": "150g"
-        },
-        "productTabs": {
-            "description": {
-                "title": "The TSindia140: Advanced Tech for Modern Fleets.",
-                "text": "Certified for AIS140 and BIS16833, the TSindia140 is a next-generation GPS tracker engineered for total fleet control, regulatory compliance, and real-time visibility. Designed for vehicles of all kinds — from commercial fleets to heavy-duty machines — it delivers advanced features, remote management, and data-driven insights to maximize operational efficiency.",
-                "highlights": [
-                    "AIS140 & BIS IS16833 Certified",
-                    "Remote Immobilization & Real-Time Alerts",
-                    "Advanced Sensor Integration",
-                    "Fast & Accurate GPS Tracking",
-                    "Built Rugged with IP65 Protection"
-                ],
-                "image": "https://traxsmart.in/media/tsindia140/fleet.jpg"
-            },
-            "features": [
-                {
-                    "key": "Rugged Build",
-                    "value": "Strong casing with IP65 protection"
-                },
-                {
-                    "key": "Water Resistant",
-                    "value": "Safe against splashes & rain"
-                },
-                {
-                    "key": "Multi-sensor Support",
-                    "value": "Compatible with multiple vehicle sensors"
-                },
-                {
-                    "key": "SOS Panic Button",
-                    "value": "Dedicated emergency button included"
-                }
-            ],
-            "technical": {
-                "Certification": "AIS140 & BIS IS16833",
-                "Battery": "1000mAh",
-                "Cold Start": "30 Seconds",
-                "Support": "9-90V"
-            },
-            "packaging": {
-                "items": ["TSindia140 GPS Device"],
-                "shipping": ["Free shipping on orders over ₹10,000"],
-                "bulkOrders": ["We support large-scale deployment for fleet operators, system integrators, OEMs, and government projects. Special pricing, custom branding, and integration support available for orders of 50 units or more. Reach out to our sales team for volume discounts and tailored logistics."]
-            }
-        }
+  {
+    "id": "2g-gps",
+    "title": "TSINDIA 140 (2G)",
+    "category": "GPS Devices",
+    "description": "The TSindia140 GPS Device is a rugged, AIS140 & BIS16833-certified tracker designed for all vehicle types. With IP65 protection, a 1000mAh backup battery, fast 30-second GPS cold start, and support for SOS panic button, driver behavior monitoring, and fuel/temperature/load sensors, it offers reliable performance and complete fleet control in any environment.",
+    "images": [
+      {
+        "src": "/media/tsindia140/5.jpg",
+        "title": "Rugged Built"
+      },
+      {
+        "src": "/media/tsindia140/2.jpg",
+        "title": "IP65 Rating"
+      },
+      {
+        "src": "/media/tsindia140/3.jpg",
+        "title": "1000mAh"
+      },
+      {
+        "src": "/media/tsindia140/8.jpg",
+        "title": "9-90v"
+      },
+      {
+        "src": "/media/tsindia140/6.jpg",
+        "title": "Multi Sensor Support"
+      }
+    ],
+    "features": [
+      {
+        "value": "AIS140 & BIS16833 Certifiedd",
+        "icon": "feather icon-feather-shield"
+      },
+      {
+        "value": "IP65 Certifieds",
+        "icon": "feather icon-feather-droplet"
+      },
+      {
+        "value": "SOS Panic Button Support",
+        "icon": "feather icon-feather-alert-triangle"
+      },
+      {
+        "value": "Driver Behavior Monitoring",
+        "icon": "feather icon-feather-truck"
+      },
+      {
+        "value": "Multi sensor support",
+        "icon": "feather icon-feather-zap"
+      },
+      {
+        "value": "Fast 30-Second Cold Start",
+        "icon": "feather icon-feather-map-pin"
+      },
+      {
+        "value": "1000mAh Inbuilt Battery",
+        "icon": "feather icon-feather-battery"
+      },
+      {
+        "value": "9-90V Support",
+        "icon": "feather icon-feather-archive"
+      },
+      {
+        "value": "Remote Immobilization Support",
+        "icon": "feather icon-feather-power"
+      }
+    ],
+    "technical": {
+      "Network": "2G GSM",
+      "Battery": "1000mAh",
+      "Dimensions": "85 x 50 x 20 mm",
+      "Weight": "150g"
     },
-     {
-        "id": "4g-gps",
-        "name": "TSINDIA 140 (2G)",
-        "category": "GPS Devices",
-        "description": "The TSindia140 GPS Device is a rugged, AIS140 & BIS16833-certified tracker designed for all vehicle types. With IP65 protection, a 1000mAh backup battery, fast 30-second GPS cold start, and support for SOS panic button, driver behavior monitoring, and fuel/temperature/load sensors, it offers reliable performance and complete fleet control in any environment.",
-        "images": [
-            "https://traxsmart.in/media/tsindia140/2.jpg",
-            "https://traxsmart.in/media/tsindia140/3.jpg",
-            "https://traxsmart.in/media/tsindia140/8.jpg",
-            "https://traxsmart.in/media/tsindia140/5.jpg",
-            "https://traxsmart.in/media/tsindia140/6.jpg"
-        ],
-        "features": [
-            {
-                "key": "Certification",
-                "value": "AIS140 & BIS16833 Certified"
-            },
-            {
-                "key": "Protocol Support",
-                "value": "Government-mandated VLT and emergency button protocols"
-            },
-            {
-                "key": "Supported Alerts",
-                "value": "SOS, Over speeding, Harsh braking, Power cut, Geofence entry/exit"
-            }
-        ],
-        "technical": {
-            "Network": "2G GSM",
-            "Battery": "1000mAh",
-            "Dimensions": "85 x 50 x 20 mm",
-            "Weight": "150g"
-        },
-        "productTabs": {
-            "description": {
+    "productDetails": {
+      "componentType": "TXTabView",
+      "data": [
+        {
+          "idx": "0",
+          "tabTitle": "Description",
+          "tabPane": {
+            "componentType": "TXSplitContentMediaRight",
+            "data": {
+              "content": {
+                "subtitle": "dad",
                 "title": "The TSindia140: Advanced Tech for Modern Fleets.",
-                "text": "Certified for AIS140 and BIS16833, the TSindia140 is a next-generation GPS tracker engineered for total fleet control, regulatory compliance, and real-time visibility. Designed for vehicles of all kinds — from commercial fleets to heavy-duty machines — it delivers advanced features, remote management, and data-driven insights to maximize operational efficiency.",
-                "highlights": [
+                "description": "Certified for AIS140 and BIS16833, the TSindia140 is a next-generation GPS tracker engineered for total fleet control, regulatory compliance, and real-time visibility. Designed for vehicles of all kinds — from commercial fleets to heavy-duty machines — it delivers advanced features, remote management, and data-driven insights to maximize operational efficiency.",
+                "listItems": {
+                  "componentType": "TXListViewStriped",
+                  "data": [
                     "AIS140 & BIS IS16833 Certified",
                     "Remote Immobilization & Real-Time Alerts",
                     "Advanced Sensor Integration",
                     "Fast & Accurate GPS Tracking",
                     "Built Rugged with IP65 Protection"
-                ],
-                "image": "https://traxsmart.in/media/tsindia140/fleet.jpg"
-            },
-            "features": [
-                {
-                    "key": "Rugged Build",
-                    "value": "Strong casing with IP65 protection"
+                  ]
                 },
-                {
-                    "key": "Water Resistant",
-                    "value": "Safe against splashes & rain"
-                },
-                {
-                    "key": "Multi-sensor Support",
-                    "value": "Compatible with multiple vehicle sensors"
-                },
-                {
-                    "key": "SOS Panic Button",
-                    "value": "Dedicated emergency button included"
-                }
-            ],
-            "technical": {
-                "Certification": "AIS140 & BIS IS16833",
-                "Battery": "1000mAh",
-                "Cold Start": "30 Seconds",
-                "Support": "9-90V"
-            },
-            "packaging": {
-                "items": ["TSindia140 GPS Device"],
-                "shipping": ["Free shipping on orders over ₹10,000"],
-                "bulkOrders": ["We support large-scale deployment for fleet operators, system integrators, OEMs, and government projects. Special pricing, custom branding, and integration support available for orders of 50 units or more. Reach out to our sales team for volume discounts and tailored logistics."]
+                "media": "https://traxsmart.in/media/tsindia140/fleet.jpg",
+                "videoURL": "https://www.youtube.com/watch?v=knWmuAiJur4"
+              }
             }
+          }
+        },
+
+        {
+          "idx": "1",
+          "tabTitle": "Features",
+          "tabPane": {
+            "componentType": "TXStripeTable",
+
+            "data": [
+              {
+                "key": "Certification",
+                "value": "AIS140 & BIS IS16833 Approved"
+              },
+              {
+                "key": "Protocol Support",
+                "value": "Government-mandated VLT and emergency button protocols"
+              },
+              {
+                "key": "Supported Alerts",
+                "value": "SOS button press, Over speeding, Harsh braking, Harsh acceleration, Ignition ON/OFF, Tow detection, Power cut, GPS signal lost, Emergency alert, Geofence entry/exit, Device health check"
+              },
+              {
+                "key": "SOS Button",
+                "value": "Included for emergency response (AIS140 requirement)"
+              },
+              {
+                "key": "Remote Immobilization",
+                "value": "Vehicle ignition cut-off supported for theft or misuse control"
+              },
+              {
+                "key": "GPS Tracking",
+                "value": "Live location updates, 30s cold start, geo-fencing enabled"
+              },
+              {
+                "key": "Power Backup",
+                "value": "1000mAh internal battery for power-loss protection"
+              },
+              {
+                "key": "Sensor Support",
+                "value": "Fuel, door, AC, temperature, load sensors supported via I/Os"
+              },
+              {
+                "key": "OTA Updates",
+                "value": "Over-the-air configuration and firmware upgrade support"
+              }
+            ]
+          }
+        },
+
+        {
+          "idx": "2",
+          "tabTitle": "Technical Specifications",
+          "tabPane": {
+            "componentType": "TXStripeTable",
+            "data": [
+              {
+                "key": "Power Supply",
+                "value": "9–36 V DC"
+              },
+              {
+                "key": "Cellular",
+                "value": "Quad Band 900/1800/850/1900"
+              },
+              {
+                "key": "GPRS Data",
+                "value": "GPRS class 12: max. 85.6 kbps (downlink/uplink)"
+              },
+              {
+                "key": "GNSS Sensitivity",
+                "value": "Acquisition: -147 dBm, Tracking: -163 dBm, Reacquisition: -156 dBm"
+              },
+              {
+                "key": "GNSS Acquisition",
+                "value": "TTFF @ -130dBm, Cold Start: 32s, Warm Start: 25s, Hot Start: 2s"
+              },
+              {
+                "key": "GNSS Receiving Bands",
+                "value": "GPS L1/Galileo E1 C/A: 1575.42 MHz, IRNSS L5 C/A: 1176.45 MHz, GLONASS L1 C/A: 1602.5625 MHz, BD2 B1 C/A: 1561.098 MHz"
+              },
+              {
+                "key": "Horizontal Position Accuracy",
+                "value": "< 1.8 m CEP"
+              },
+              {
+                "key": "Communication",
+                "value": "TCP/IP, HTTP (For CDAC), FTP, SMS"
+              },
+              {
+                "key": "Accelerometer",
+                "value": "6 Axis Motion Sensing"
+              },
+              {
+                "key": "Internal Battery",
+                "value": "3.7 V Li-Poly, 600mAh"
+              },
+              {
+                "key": "Antenna",
+                "value": "High Gain Onboard Antennas for GSM & GNSS"
+              },
+              {
+                "key": "LEDs",
+                "value": "Three LEDs for Power, GPS and GSM status indication"
+              },
+              {
+                "key": "Device Working Mode",
+                "value": "Active mode & Sleep mode"
+              },
+              {
+                "key": "Memory",
+                "value": "Storage for 40000+ packets"
+              },
+              {
+                "key": "Housing",
+                "value": "Dust & Water Proof (IP65)"
+              },
+              {
+                "key": "SIM Type",
+                "value": "Dual profile eSIM/ Plastic Sim"
+              },
+              {
+                "key": "Operating Temperature",
+                "value": "-20°C to 85°C"
+              },
+              {
+                "key": "Storage Temperature",
+                "value": "-40°C to 85°C"
+              },
+              {
+                "key": "Protections",
+                "value": "Reverse Polarity, Overvoltage, Short Circuit, Surge, Load Dump"
+              },
+              {
+                "key": "Certification",
+                "value": "AIS140 Compliant (ARAI), ROHS Compliant"
+              },
+              {
+                "key": "Current Consumption",
+                "value": "Active Mode: 50–90 mA, Sleep Mode: <20 mA"
+              },
+              {
+                "key": "Software Features",
+                "value": "FOTA, Odometer, Turn Detection, GPS Drift Control, Driving Behavior"
+              },
+              {
+                "key": "Connector",
+                "value": "14 Pins (4 Pin + 6 Pin + 4 Pin)"
+              },
+              {
+                "key": "Connectivity",
+                "value": "Ignition, Panic Button, 2 Digital Input, 1 Digital Output, 2 Analog Input, 1 RS232"
+              },
+              {
+                "key": "Wire Harness",
+                "value": "4 Sqmm (7–36) SWG High Quality Flexible Wire, Current Rating: 1.5 Amps Max, Length: 1 mtr"
+              }
+            ]
+          }
+        },
+
+        {
+          "idx": "3",
+          "tabTitle": "Packaging and Shipping",
+          "tabPane": {
+            "componentType": "TXListView",
+            "data": [
+              {
+                "title": "Packaging information",
+                "listItems": {
+                  "componentType": "TXListViewStriped",
+                  "data": [
+                    "TSindia140 GPS Device",
+                    "Wiring Harness",
+                    "External GNSS & GSM Antennas (if applicable)",
+                    "SOS Button (AIS140 variant)",
+                    "Installation Guide"
+                  ]
+                }
+              },
+              {
+                "title": "Shipping Information",
+                "listItems": {
+                  "componentType": "TXListViewStriped",
+                  "data": [
+                    "Free shipping on orders over ₹10,000",
+                    "Standard delivery: 3–7 business days",
+                    "Express delivery available at checkout",
+                    "International shipping via DHL/FedEx",
+                    "Secure, pre-tested and sealed packaging"
+                  ]
+                }
+              },
+              {
+                "title": "Bulk Orders",
+                "description": "We support large-scale deployment for fleet operators, system integrators, OEMs, and government projects. Special pricing, custom branding, and integration support available for orders of 50 units or more. Reach out to our sales team for volume discounts and tailored logistics."
+              }
+            ]
+          }
         }
+      ]
     }
+  },
+
+  {
+    "id": "4g-gps",
+    "title": "TSINDIA 140 (2G)",
+    "category": "GPS Devices",
+    "description": "The TSindia140 GPS Device is a rugged, AIS140 & BIS16833-certified tracker designed for all vehicle types. With IP65 protection, a 1000mAh backup battery, fast 30-second GPS cold start, and support for SOS panic button, driver behavior monitoring, and fuel/temperature/load sensors, it offers reliable performance and complete fleet control in any environment.",
+    "images": [
+      {
+        "src": "/media/tsindia140/5.jpg",
+        "title": "Rugged Built"
+      },
+      {
+        "src": "/media/tsindia140/2.jpg",
+        "title": "IP65 Rating"
+      },
+      {
+        "src": "/media/tsindia140/3.jpg",
+        "title": "1000mAh"
+      },
+      {
+        "src": "/media/tsindia140/8.jpg",
+        "title": "9-90v"
+      },
+      {
+        "src": "/media/tsindia140/6.jpg",
+        "title": "Multi Sensor Support"
+      }
+    ],
+    "features": [
+      {
+        "value": "AIS140 & BIS16833 Certifiedd",
+        "icon": "feather icon-feather-shield"
+      },
+      {
+        "value": "IP65 Certifieds",
+        "icon": "feather icon-feather-droplet"
+      },
+      {
+        "value": "SOS Panic Button Support",
+        "icon": "feather icon-feather-alert-triangle"
+      },
+      {
+        "value": "Driver Behavior Monitoring",
+        "icon": "feather icon-feather-truck"
+      },
+      {
+        "value": "Multi sensor support",
+        "icon": "feather icon-feather-zap"
+      },
+      {
+        "value": "Fast 30-Second Cold Start",
+        "icon": "feather icon-feather-map-pin"
+      },
+      {
+        "value": "1000mAh Inbuilt Battery",
+        "icon": "feather icon-feather-battery"
+      },
+      {
+        "value": "9-90V Support",
+        "icon": "feather icon-feather-archive"
+      },
+      {
+        "value": "Remote Immobilization Support",
+        "icon": "feather icon-feather-power"
+      }
+    ],
+    "technical": {
+      "Network": "2G GSM",
+      "Battery": "1000mAh",
+      "Dimensions": "85 x 50 x 20 mm",
+      "Weight": "150g"
+    },
+    "productDetails": {
+      "componentType": "TXTabView",
+      "data": [
+        {
+          "idx": "0",
+          "tabTitle": "Description",
+          "tabPane": {
+            "componentType": "TXSplitContentMediaRight",
+            "data": {
+              "content": {
+                "subtitle": "dad",
+                "title": "The TSindia140: Advanced Tech for Modern Fleets.",
+                "description": "Certified for AIS140 and BIS16833, the TSindia140 is a next-generation GPS tracker engineered for total fleet control, regulatory compliance, and real-time visibility. Designed for vehicles of all kinds — from commercial fleets to heavy-duty machines — it delivers advanced features, remote management, and data-driven insights to maximize operational efficiency.",
+                "listItems": {
+                  "componentType": "TXListViewStriped",
+                  "data": [
+                    "AIS140 & BIS IS16833 Certified",
+                    "Remote Immobilization & Real-Time Alerts",
+                    "Advanced Sensor Integration",
+                    "Fast & Accurate GPS Tracking",
+                    "Built Rugged with IP65 Protection"
+                  ]
+                },
+                "media": "https://traxsmart.in/media/tsindia140/fleet.jpg",
+                "videoURL": "https://www.youtube.com/watch?v=knWmuAiJur4"
+              }
+            }
+          }
+        },
+
+        {
+          "idx": "1",
+          "tabTitle": "Features",
+          "tabPane": {
+            "componentType": "TXStripeTable",
+
+            "data": [
+              {
+                "key": "Certification",
+                "value": "AIS140 & BIS IS16833 Approved"
+              },
+              {
+                "key": "Protocol Support",
+                "value": "Government-mandated VLT and emergency button protocols"
+              },
+              {
+                "key": "Supported Alerts",
+                "value": "SOS button press, Over speeding, Harsh braking, Harsh acceleration, Ignition ON/OFF, Tow detection, Power cut, GPS signal lost, Emergency alert, Geofence entry/exit, Device health check"
+              },
+              {
+                "key": "SOS Button",
+                "value": "Included for emergency response (AIS140 requirement)"
+              },
+              {
+                "key": "Remote Immobilization",
+                "value": "Vehicle ignition cut-off supported for theft or misuse control"
+              },
+              {
+                "key": "GPS Tracking",
+                "value": "Live location updates, 30s cold start, geo-fencing enabled"
+              },
+              {
+                "key": "Power Backup",
+                "value": "1000mAh internal battery for power-loss protection"
+              },
+              {
+                "key": "Sensor Support",
+                "value": "Fuel, door, AC, temperature, load sensors supported via I/Os"
+              },
+              {
+                "key": "OTA Updates",
+                "value": "Over-the-air configuration and firmware upgrade support"
+              }
+            ]
+          }
+        },
+
+        {
+          "idx": "2",
+          "tabTitle": "Technical Specifications",
+          "tabPane": {
+            "componentType": "TXStripeTable",
+            "data": [
+              {
+                "key": "Power Supply",
+                "value": "9–36 V DC"
+              },
+              {
+                "key": "Cellular",
+                "value": "Quad Band 900/1800/850/1900"
+              },
+              {
+                "key": "GPRS Data",
+                "value": "GPRS class 12: max. 85.6 kbps (downlink/uplink)"
+              },
+              {
+                "key": "GNSS Sensitivity",
+                "value": "Acquisition: -147 dBm, Tracking: -163 dBm, Reacquisition: -156 dBm"
+              },
+              {
+                "key": "GNSS Acquisition",
+                "value": "TTFF @ -130dBm, Cold Start: 32s, Warm Start: 25s, Hot Start: 2s"
+              },
+              {
+                "key": "GNSS Receiving Bands",
+                "value": "GPS L1/Galileo E1 C/A: 1575.42 MHz, IRNSS L5 C/A: 1176.45 MHz, GLONASS L1 C/A: 1602.5625 MHz, BD2 B1 C/A: 1561.098 MHz"
+              },
+              {
+                "key": "Horizontal Position Accuracy",
+                "value": "< 1.8 m CEP"
+              },
+              {
+                "key": "Communication",
+                "value": "TCP/IP, HTTP (For CDAC), FTP, SMS"
+              },
+              {
+                "key": "Accelerometer",
+                "value": "6 Axis Motion Sensing"
+              },
+              {
+                "key": "Internal Battery",
+                "value": "3.7 V Li-Poly, 600mAh"
+              },
+              {
+                "key": "Antenna",
+                "value": "High Gain Onboard Antennas for GSM & GNSS"
+              },
+              {
+                "key": "LEDs",
+                "value": "Three LEDs for Power, GPS and GSM status indication"
+              },
+              {
+                "key": "Device Working Mode",
+                "value": "Active mode & Sleep mode"
+              },
+              {
+                "key": "Memory",
+                "value": "Storage for 40000+ packets"
+              },
+              {
+                "key": "Housing",
+                "value": "Dust & Water Proof (IP65)"
+              },
+              {
+                "key": "SIM Type",
+                "value": "Dual profile eSIM/ Plastic Sim"
+              },
+              {
+                "key": "Operating Temperature",
+                "value": "-20°C to 85°C"
+              },
+              {
+                "key": "Storage Temperature",
+                "value": "-40°C to 85°C"
+              },
+              {
+                "key": "Protections",
+                "value": "Reverse Polarity, Overvoltage, Short Circuit, Surge, Load Dump"
+              },
+              {
+                "key": "Certification",
+                "value": "AIS140 Compliant (ARAI), ROHS Compliant"
+              },
+              {
+                "key": "Current Consumption",
+                "value": "Active Mode: 50–90 mA, Sleep Mode: <20 mA"
+              },
+              {
+                "key": "Software Features",
+                "value": "FOTA, Odometer, Turn Detection, GPS Drift Control, Driving Behavior"
+              },
+              {
+                "key": "Connector",
+                "value": "14 Pins (4 Pin + 6 Pin + 4 Pin)"
+              },
+              {
+                "key": "Connectivity",
+                "value": "Ignition, Panic Button, 2 Digital Input, 1 Digital Output, 2 Analog Input, 1 RS232"
+              },
+              {
+                "key": "Wire Harness",
+                "value": "4 Sqmm (7–36) SWG High Quality Flexible Wire, Current Rating: 1.5 Amps Max, Length: 1 mtr"
+              }
+            ]
+          }
+        },
+
+        {
+          "idx": "3",
+          "tabTitle": "Packaging and Shipping",
+          "tabPane": {
+            "componentType": "TXListView",
+            "data": [
+              {
+                "title": "Packaging information",
+                "listItems": {
+                  "componentType": "TXListViewStriped",
+                  "data": [
+                    "TSindia140 GPS Device",
+                    "Wiring Harness",
+                    "External GNSS & GSM Antennas (if applicable)",
+                    "SOS Button (AIS140 variant)",
+                    "Installation Guide"
+                  ]
+                }
+              },
+              {
+                "title": "Shipping Information",
+                "listItems": {
+                  "componentType": "TXListViewStriped",
+                  "data": [
+                    "Free shipping on orders over ₹10,000",
+                    "Standard delivery: 3–7 business days",
+                    "Express delivery available at checkout",
+                    "International shipping via DHL/FedEx",
+                    "Secure, pre-tested and sealed packaging"
+                  ]
+                }
+              },
+              {
+                "title": "Bulk Orders",
+                "description": "We support large-scale deployment for fleet operators, system integrators, OEMs, and government projects. Special pricing, custom branding, and integration support available for orders of 50 units or more. Reach out to our sales team for volume discounts and tailored logistics."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
 ]

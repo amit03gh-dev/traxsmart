@@ -1,0 +1,280 @@
+{
+  "data": [
+    {
+      "sectionName": "one",
+      "componentName": "HeroSection",
+      "content": [
+        {
+          "title": "Location Tracking Services",
+          "subtitle": ["Track anything,", "anywhere", "anytime"],
+          "backgroundLeft": "/media/bg-blue.png",
+          "backgroundRight": "/media/banner/gps.jpg",
+          "ctaLink": "https://forms.gle/9TW51UbmnRzjowat7"
+        },
+        {
+          "title": "SaaS Platforms",
+          "subtitle": ["Software", "Development"],
+          "backgroundLeft": "/media/bg-blue.png",
+          "backgroundRight": "/media/banner/saas.jpg",
+          "ctaLink": "https://forms.gle/9TW51UbmnRzjowat7"
+        },
+        {
+          "title": "Electronics Manufacturing Services",
+          "subtitle": ["Hardware design", "and", "manufacturing"],
+          "backgroundLeft": "/media/bg-blue.png",
+          "backgroundRight": "/media/banner/ems.jpg",
+          "ctaLink": "https://forms.gle/9TW51UbmnRzjowat7"
+        },
+        {
+          "title": "m2m mobility services",
+          "subtitle": ["m2m", "e-Sim", "services."],
+          "backgroundLeft": "/media/bg-blue.png",
+          "backgroundRight": "/media/banner/esim.jpg",
+          "ctaLink": "https://forms.gle/9TW51UbmnRzjowat7"
+        }
+      ]
+    },
+    {
+      "sectionName": "Two",
+      "componentName": "SplitLayout",
+      "content": {
+        "header": "Our Flagship Product",
+        "title": "TSINDIA140",
+        "description": "Introducing TSIndia140, Traxsmart's flagship AIS140-compliant solution designed for superior vehicle tracking and fleet management. With IRNSS support, MFF2 eSIM capability, and adherence to both AIS140 and BIS 16833 standards, it delivers real-time insights for enhanced safety, reliability, and operational efficiency in modern transportation.",
+        "listItems": [
+          "AIS-140 & BIS-16833 compliant",
+          "IP65 certified",
+          "IRNSS Ready",
+          "e-Sim (MFF2) Ready"
+        ],
+        "cta": {
+          "text": "Discover more",
+          "href": "products-gps-tsindia140.html",
+          "icon": "feather icon-feather-thumbs-up"
+        },
+        "contact": {
+          "phone": "18008895802",
+          "label": "Have any question?"
+        },
+        "mainImage": {
+          "src": "/media/ais1402.png",
+          "alt": "AIS140 Device Main",
+          "width": 600,
+          "height": 400
+        },
+        "secondaryImage": {
+          "src": "/media/ais140.png",
+          "alt": "AIS140 Device Small",
+          "width": 400,
+          "height": 300
+        },
+        "partners": {
+          "componentName": "horizontalCarousel",
+          "data": [
+            "/media/clients/1.png",
+            "/media/clients/2.png",
+            "/media/clients/3.png",
+            "/media/clients/4.png",
+            "/media/clients/5.png",
+            "/media/clients/6.png",
+            "/media/clients/7.png",
+            "/media/clients/8.png"
+          ]
+        }
+      }
+    },
+    {
+      "sectionName": "three",
+      "componentName": "SplitLayout",
+      "content": {
+        "header": "Intelligent. Secure. Flexible.",
+        "tile": "Ventel - m2m IoT connectivity services",
+        "description": "Ventel eSIM-enabled M2M connectivity solution revolutionizes IoT services for businesses by optimizing asset control and management. With remote management features and expedited services, our solution prioritizes M2M connectivity and security-by-design for safeguarding customer data.",
+        "mainImage": {
+          "src": "/media/e-sim-blue.png",
+          "alt": "Ventel IoT eSIM",
+          "width": 360,
+          "height": 360
+        },
+        "features": [
+          {
+            "img": "/media/esim/1.png",
+            "title": "Space-Saving Design",
+            "desc": "Sleek and modern, offering more features in a compact form. Enjoy a lighter, more streamlined experience without compromising on performance."
+          },
+          {
+            "img": "/media/esim/2.png",
+            "title": "Enhanced Security",
+            "desc": "Your privacy matters! eSIMs offer state-of-the-art security features, keeping your personal information safe from theft and loss."
+          },
+          {
+            "img": "/media/esim/3.png",
+            "title": "Remote Provisioning",
+            "desc": "Say goodbye to fumbling with physical SIM cards! With eSIM, effortlessly switch between carriers and plans at the touch of a button."
+          },
+          {
+            "img": "/media/esim/4.png",
+            "title": "AIS140 Compliant",
+            "desc": "Our DoT Certified M2M eSIMs ensure compliance with AIS140 standards, making them ideal for public transport and connected vehicle applications."
+          }
+        ]
+      }
+    },
+    {
+      "sectionName": "four",
+      "componentName": "StripView",
+      "content": {
+        "cta": {
+          "img": "/media/support.png",
+          "alt": "support",
+          "text": "Save your precious time and effort spent for finding a solution.",
+          "link": {
+            "href": "https://forms.gle/9TW51UbmnRzjowat7",
+            "label": "Let's connect"
+          }
+        }
+      }
+    },
+    {
+      "sectionName": "five",
+      "componentName": "StripView",
+      "content": {
+        "header": "Electronics Manufacturing Services",
+        "title": "Innovating Tomorrow's Technology Today",
+        "description": "TraxSmart specializes in cutting-edge electronics manufacturing services, delivering quality and efficiency to power your vision.",
+        "mainImage": {
+          "src": "https://manufacturing-today.com/wp-content/uploads/sites/4/2024/05/Electronics-Manufacturing-article-image-800x445.png",
+          "alt": "Electronics Manufacturing"
+        },
+        "features": [
+          {
+            "icon": "fa-solid fa-check",
+            "text": "State-of-the-Art Facilities"
+          },
+          { "icon": "fa-solid fa-check", "text": "End-to-End Solutions" },
+          { "icon": "fa-solid fa-check", "text": "Commitment to Quality" }
+        ],
+        "cta": {
+          "text": "Discover more",
+          "href": "https://forms.gle/9TW51UbmnRzjowat7",
+          "icon": "feather icon-feather-thumbs-up"
+        },
+        "contact": {
+          "label": "Have any question?",
+          "phone": "18002129911"
+        },
+        "videoUrl": "https://www.youtube.com/embed/VYr5qKB8K1s?si=Zk7DCmmg7OD-hBZu"
+      }
+    },
+
+    {
+      "sectionName": "six",
+      "componentName": "StripView",
+      "content": {
+        "header": "Offering services across",
+        "title": "15+ Industries",
+        "description": "We offer advanced GPS tracking technology designed to improve visibility and efficiency across multiple domains. Our solutions include real-time tracking, route optimization, and asset monitoring, enabling businesses to streamline processes, reduce costs, and enhance customer satisfaction.",
+
+        "industriesList": [
+          { "title": "Logistics", "img": "/media/domains/logistics.jpg" },
+          { "title": "Agriculture", "img": "/media/domains/agriculture.jpg" },
+          {
+            "title": "Emergency Services",
+            "img": "/media/domains/emergency-services.jpg"
+          },
+          { "title": "Smart Waste", "img": "/media/domains/swm.jpg" },
+          { "title": "Schools", "img": "/media/domains/schools.jpg" },
+          { "title": "Mining", "img": "/media/domains/mining.jpg" },
+          { "title": "Oil and Gas", "img": "/media/domains/oil-and-gas.jpg" },
+          {
+            "title": "Passerger Transit",
+            "img": "/media/domains/passenger_transit.jpg"
+          },
+          { "title": "Railways", "img": "/media/domains/railways.jpg" },
+          { "title": "Waterways", "img": "/media/domains/waterways.jpg" }
+        ]
+      }
+    },
+
+    {
+      "sectionName": "seven",
+      "componentName": "StripView",
+      "content": {
+        "header": "An one-stop solution for all your AIS140 needs.",
+        "title": "Grow your AIS140 business with us",
+        "description": "Elevate your business with Traxsmart's AIS140 Stack, the all-in-one solution for AIS140-compliant vehicle tracking devices, eSIM technology, and expert software and hardware support, empowering you to thrive in the passenger commercial vehicle market!",
+        "tabs": [
+          {
+            "id": "tab_four1",
+            "icon": "icon-feather-compass",
+            "title": "AIS140 VLTD",
+            "image": "/media/ais140stack/1.png",
+            "desc": "Discover reliable white-labeled GPS devices tailored to your brand's needs, ensuring seamless integration and precise location tracking capabilities."
+          },
+          {
+            "id": "tab_four2",
+            "icon": "icon-feather-wifi",
+            "title": "m2m eSIM Solutions",
+            "image": "/media/ais140stack/2.jpg",
+            "desc": "Explore cutting-edge eSIM solutions, empowering connectivity for IoT devices with global coverage and secure, scalable management options."
+          },
+          {
+            "id": "tab_four3",
+            "icon": "icon-feather-monitor",
+            "title": "Software Solutions",
+            "image": "/media/ais140stack/software.png",
+            "desc": "Harness powerful software solutions for comprehensive tracking, MIS reporting, and efficient device management across diverse industries."
+          },
+          {
+            "id": "tab_four4",
+            "icon": "icon-feather-settings",
+            "title": "Custom Manufacturing",
+            "image": "/media/ais140stack/4.jpg",
+            "desc": "Leverage expertise in custom manufacturing of AIS140-compliant GPS devices, designed to meet specific regulatory requirements and operational demands with precision."
+          }
+        ]
+      }
+    },
+    {
+      "sectionName": "eight",
+      "componentName": "StripView",
+      "content": {
+        "header": "Get in Touch",
+        "title": "Connect with us",
+        "description": "For all your GPS tracking inquiries and needs, feel free to contact us. Our dedicated team is here to provide support, guidance, and personalized solutions.",
+        "contacts": [
+          {
+            "icon": "icon-feather-map-pin",
+            "title": "Locations",
+            "content": ["3rd Floor, 21 Princep Street", "Kolkata 700072"]
+          },
+          {
+            "icon": "icon-feather-mail",
+            "title": "Mail Us",
+            "emails": ["info@traxsmart.in", "info@ventel.in"]
+          },
+          {
+            "icon": "icon-feather-phone-outgoing",
+            "title": "Call us",
+            "phones": [
+              {
+                "label": "Phone",
+                "number": "1800 889 5802"
+              }
+            ]
+          },
+          {
+            "icon": "icon-feather-users",
+            "title": "Join our team",
+            "emails": ["hr@traxsmart.in"]
+          }
+        ]
+      }
+    },
+    {
+      "sectionName": "nine",
+      "componentName": "StripView",
+      "content": {}
+    }
+  ]
+}

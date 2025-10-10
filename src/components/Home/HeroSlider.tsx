@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { HeroContentItem } from "@/types/home";
 
 type Slide = {
   title: string;
@@ -21,34 +22,39 @@ const slides: Slide[] = [
   {
     title: "Location Tracking Services",
     subtitle: ["Track anything,", "anywhere", "anytime"],
-    backgroundLeft: "media/bg-blue.png",
-    backgroundRight: "media/banner/gps.jpg",
+    backgroundLeft: "/media/bg-blue.png",
+    backgroundRight: "/media/banner/gps.jpg",
     ctaLink: "https://forms.gle/9TW51UbmnRzjowat7",
   },
   {
     title: "SaaS Platforms",
     subtitle: ["Software", "Development"],
-    backgroundLeft: "media/bg-blue.png",
-    backgroundRight: "media/banner/saas.jpg",
+    backgroundLeft: "/media/bg-blue.png",
+    backgroundRight: "/media/banner/saas.jpg",
     ctaLink: "https://forms.gle/9TW51UbmnRzjowat7",
   },
   {
     title: "Electronics Manufacturing Services",
     subtitle: ["Hardware design", "and", "manufacturing"],
-    backgroundLeft: "media/bg-blue.png",
-    backgroundRight: "media/banner/ems.jpg",
+    backgroundLeft: "/media/bg-blue.png",
+    backgroundRight: "/media/banner/ems.jpg",
     ctaLink: "https://forms.gle/9TW51UbmnRzjowat7",
   },
   {
     title: "m2m mobility services",
     subtitle: ["m2m", "e-Sim", "services."],
-    backgroundLeft: "media/bg-blue.png",
-    backgroundRight: "media/banner/esim.jpg",
+    backgroundLeft: "/media/bg-blue.png",
+    backgroundRight: "/media/banner/esim.jpg",
     ctaLink: "https://forms.gle/9TW51UbmnRzjowat7",
   },
 ];
 
-export default function HeroSlider() {
+
+interface Props {
+  data: HeroContentItem[]
+}
+
+export default function HeroSlider({data}: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const containerVariants = {
@@ -86,7 +92,7 @@ export default function HeroSlider() {
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
         className="swiper full-screen swiper-number-pagination-style-01 md-h-auto magic-cursor"
       >
-        {slides.map((slide, index) => (
+        {data.map((slide, index) => (
           <SwiperSlide key={index}>
             <div className="container-fluid h-100 g-0">
               <div className="row h-100 p-0">

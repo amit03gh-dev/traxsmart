@@ -1,28 +1,20 @@
-import { ORDER_URL } from "@/config/api.config";
+import { HOME_URL} from "@/config/api.config";
 import ApiService from "./Api.service";
 import { RequestParams, RequestHeaders } from "@/utils/apiCallers";
+import { ApiResponse } from "@/types/home";
 
 // Example: Define types for your order
-export interface Products {
-  id: string;
-  status: string;
-  amount: number;
-}
 
-export interface UpdateOrderPayload {
-  status?: string;
-  amount?: number;
-}
 
-class HomeService extends ApiService<Products, UpdateOrderPayload, RequestParams> {
+class HomeService extends ApiService<ApiResponse, RequestParams> {
   constructor() {
-    super(ORDER_URL);
+    super(HOME_URL);
   }
 
   getProducts(
     params: RequestParams = {},
     headers?: RequestHeaders
-  ): Promise<Products> {
+  ): Promise<ApiResponse> {
     return this.get(
       { ...params } as RequestParams,
       { ...this._headers, ...headers }
@@ -30,7 +22,7 @@ class HomeService extends ApiService<Products, UpdateOrderPayload, RequestParams
   }
 }
 
-// ✅ Assign to a variable before export
+// Assign to a variable before export
 const homeService = new HomeService();
 
 export { homeService };
