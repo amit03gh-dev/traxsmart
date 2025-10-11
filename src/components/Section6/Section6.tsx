@@ -21,7 +21,7 @@ type props = {
   };
 };
 
-export default function SectionFive({ data }: props) {
+export default function Section6({ data }: props) {
   const { content } = data;
   return (
     <section

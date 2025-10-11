@@ -1,17 +1,14 @@
 // app/products/[id]/page.tsx
 import { Metadata } from "next";
 import ProductGallery from "@/components/Product/productGallary";
-import ImageSlider from "@/components/Product/ImageSlider";
 import productService from "@/services/Product.service";
 import { ProductData } from "@/types/product";
 import ProductDetails from "@/components/Product/ProductDetails";
 import ProductTabs from "@/components/Product/productTabView/ProductTabs";
 import Link from "next/link";
+import TX_LogoSlider from "@/components/common/Slider/TX_LogoSlider";
 
 export const revalidate = 7776000; 
-// 🔁 Revalidate this page every 60 seconds (ISR caching)
-// You can also use 'force-cache' or 'no-store' depending on your needs.
-
 
 export async function generateStaticParams() {
   const response = await productService.getProducts();
@@ -24,13 +21,12 @@ export async function generateStaticParams() {
 
 
 // 2. SEO Metadata (Dynamic <head>)
-export async function generateMetadata(
-  { params }: { params: { id: string } }
-): Promise<Metadata> {
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }) {
+  const { id } = await params; 
   const response = await productService.getProducts();
   const allProducts: ProductData[] = response.data || [];
   const product = allProducts[0]?.data?.find(
-    (p: any) => p.id.toString() === params.id
+    (p: any) => p.id.toString() === id
   );
 
   if (!product) {
@@ -49,7 +45,7 @@ export async function generateMetadata(
       description: product.description,
       images: product.images?.length
         ? [{ url: product.images[0].src }]
-        : []
+        : [],
     },
     twitter: {
       card: "summary_large_image",
@@ -63,15 +59,13 @@ export async function generateMetadata(
 }
 
 
-export default async function ProductPage({
-  params,
-}: {
-  params: { id: string };
-}) {
+
+export default async function ProductPage({ params }: { params: Promise<{ id: string }> }) {
+  const {id} = await params
   const response = await productService.getProducts();
   const allProducts = response.data || [];
   const product = allProducts[0]?.data?.find(
-    (p: any) => p.id.toString() === params.id
+    (p: any) => p.id.toString() === id
   );
 
   if (!product)
@@ -79,7 +73,7 @@ export default async function ProductPage({
 
   return (
     <>
-      {/* 🧭 Breadcrumb */}
+      {/*  Breadcrumb */}
       <section className="top-space-margin bg-gradient-very-light-gray pt-20px pb-20px ps-45px pe-45px sm-ps-15px sm-pe-15px">
         <div className="container-fluid">
           <div className="row align-items-center">
@@ -99,7 +93,7 @@ export default async function ProductPage({
         </div>
       </section>
 
-      {/* 🖼️ Product Details Section */}
+      {/* Product Details Section */}
       <section className="pt-60px pb-0 md-pt-30px">
         <div className="container">
           <div className="row">
@@ -117,15 +111,14 @@ export default async function ProductPage({
         </div>
       </section>
 
-      {/* 🧩 Tabs Section */}
       <section id="tab">
         <ProductTabs productDetails={product.productDetails} />
       </section>
 
-      {/* 🖼️ Image Slider Section */}
+      {/*  Image Slider Section */}
       <section className="pt-0">
         <div className="container">
-          <ImageSlider />
+          <TX_LogoSlider />
         </div>
       </section>
     </>

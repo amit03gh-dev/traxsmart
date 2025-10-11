@@ -38,7 +38,7 @@ type Props = {
 };
 
 // ================= COMPONENT =================
-export default function SectionFour({ data }: Props) {
+export default function Section5({ data }: Props) {
 
   return (
    <TX_SplitContentMediaLeft data={data.content}/>

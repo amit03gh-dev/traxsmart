@@ -1,11 +1,11 @@
-import AIS140 from "@/components/AIS140/Ais140";
-import ContactSection from "@/components/Contacts/Contacts";
-import HomeComp from "@/components/Home/Home";
-import SectionFive from "@/components/SectionFive/SectionFive";
-import SectionFour from "@/components/SectionFour/SectionFour";
-import SectionSeven from "@/components/SectionSeven/SectionSeven";
-import SectionSix from "@/components/SectionSix/SectionSix";
-import EsimSection from "@/components/VentelIOT/IotSection";
+import Section1 from "@/components/Section1/Section1";
+import Section2 from "@/components/Section2/Section2";
+import Section3 from "@/components/Section3/Section3";
+import Section4 from "@/components/Section4/Section4";
+import Section5 from "@/components/Section5/Section5";
+import Section6 from "@/components/Section6/Section6";
+import Section7 from "@/components/Section7/Section7";
+import Section8 from "@/components/Section8/Section8";
 
 import HomeService from "@/services/Home.service";
 
@@ -26,27 +26,26 @@ export default async function Home() {
   return (
     <main className="overflow-hidden">
       {/* Hero */}
-      <HomeComp data={comp1} />
+      <Section1 data={comp1} />
 
       {/* Product Section */}
-      <AIS140 data={comp2} />
+      <Section2 data={comp2} />
       {/* <AIS140  /> */}
 
       {/* IoT */}
-      <EsimSection data={comp3} />
-      <SectionSeven data={comp4}/>
+      <Section3 data={comp3} />
+      <Section4 data={comp4}/>
 
-      <SectionFour data={comp5} />
-      {/* <SectionFour data={heroData} /> */}
+      <Section5 data={comp5} />
 
       {/* Case Studies */}
-      <SectionFive data={comp6} />
+      <Section6 data={comp6} />
 
       {/* More Services */}
-      <SectionSix data={comp7} />
+      <Section7 data={comp7} />
 
       {/* Contact */}
-      <ContactSection data={comp8} />
+      <Section8 data={comp8} />
     </main>
   );
 }

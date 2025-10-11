@@ -222,7 +222,7 @@ interface Props {
   }
 }
 
-export default function SectionSix({ data }: Props) {
+export default function Section7({ data }: Props) {
   const {content} = data
   return (
     <section className="bg-gradient-solitude-blue-transparent" id="services">

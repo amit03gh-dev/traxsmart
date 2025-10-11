@@ -91,7 +91,7 @@ const clients = [
   "/media/clients/8.png",
 ];
 
-export default function ImageSlider() {
+export default function TX_LogoSlider() {
   return (
     <div className="row">
       <div className="text-center mb-50px">

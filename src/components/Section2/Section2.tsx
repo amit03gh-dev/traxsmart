@@ -3,11 +3,11 @@
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
-import ImageSlider from "../Product/ImageSlider";
 import TX_SectionHeaderType1 from "../common/SectionHeader/TX_SectionHeaderType1";
 import TX_ListItemViewTwo from "../common/ListItemView/TX_ListItemViewTwo";
 import ButtonViewOne from "../common/ButtonView/ButtonViewOne";
 import TX_ContactView1 from "../common/ContactView/TX_ContactView1";
+import TX_LogoSlider from "../common/Slider/TX_LogoSlider";
 
 // Define props types
 
@@ -54,7 +54,7 @@ interface Props {
   data: AIS140;
 }
 
-export default function AIS140({ data }: Props) {
+export default function Section2({ data }: Props) {
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const sectionRef = useRef<HTMLElement>(null);
   const imageRef = useRef<HTMLDivElement>(null);
@@ -105,7 +105,7 @@ export default function AIS140({ data }: Props) {
 
   return (
     <section
-      id="#home"
+      id="ais140"
       ref={sectionRef}
       className="bg-gradient-solitude-blue-transparent"
     >
@@ -176,7 +176,7 @@ export default function AIS140({ data }: Props) {
         </div>
 
         <div className="row position-relative clients-style-08 mt-15">
-          <ImageSlider />
+          <TX_LogoSlider />
         </div>
       </div>
     </section>

@@ -1,6 +1,7 @@
 'use client';
 
-import ImageSlider from "../Product/ImageSlider";
+import TX_LogoSlider from "../common/Slider/TX_LogoSlider";
+// import ImageSlider from "../Product/ImageSlider";
 
 
 export default function OurPartnersComp() {
@@ -9,7 +10,7 @@ export default function OurPartnersComp() {
     <section className="py-5">
       <div className="container">
         <div className="col swiper text-center feather-shadow">
-          <ImageSlider/>
+          <TX_LogoSlider/>
         </div>
       </div>
     </section>

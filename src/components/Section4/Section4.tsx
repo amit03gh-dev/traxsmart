@@ -23,7 +23,7 @@ type Props = {
   };
 };
 
-export default function SectionSeven({ data }: Props) {
+export default function Section4({ data }: Props) {
   const {cta} = data.content
   return (
     <section className="p-0 bg-theme">

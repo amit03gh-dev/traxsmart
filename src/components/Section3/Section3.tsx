@@ -41,7 +41,7 @@ type EsimData = {
 
 
 // ================== COMPONENT ==================
-export default function EsimSection({ data }: Props) {
+export default function Section3({ data }: Props) {
   const {content}= data
   const scrollY = useMotionValue(0);
   const scrollTransform = useTransform(scrollY, [0, 1], [-30, 30]);

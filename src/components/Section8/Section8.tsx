@@ -105,7 +105,7 @@ interface Props {
   }
 }
 
-export default function ContactSection({ data }: Props) {
+export default function Section8({ data }: Props) {
   const {content} = data
   return (
     <section id="contact" className="big-section">
