@@ -50,6 +50,8 @@ const TabView1 = ({data}: Props) => {
                             className="border-radius-6px w-100"
                             width={500}
                             height={400}
+                            priority
+                            fetchPriority="high"
                           />
                         </div>
                         <div className="col-xl-4 col-md-6 offset-xl-1 text-center text-md-start">

@@ -32,6 +32,8 @@ const TSX_CtaBanner1 = ({data}: Props) => {
               width={122}
               height={92}
               // className="w-15"
+              priority
+              fetchPriority="high"
             />
             <div className="fs-17 lh-26 last-paragraph-no-margin text-white pt-15px pb-15px fw-500">
               <p>

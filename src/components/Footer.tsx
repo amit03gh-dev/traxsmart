@@ -22,6 +22,8 @@ export default function Footer({ data }: PropsType) {
                 alt={logo.alt}
                 width={logo.width}
                 height={logo.height}
+                priority
+                fetchPriority="high"
               />
             </a>
             <p className="w-70 mb-10px xl-w-100">{address}</p>

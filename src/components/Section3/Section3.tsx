@@ -70,18 +70,7 @@ export default function Section3({ data }: Props) {
             viewport={{ once: true, amount: 0.5 }}
             transition={{ duration: 0.8, ease: "easeOut" }}
           >
-            {/* <div className="mb-10px">
-              <span className="w-30px h-2px fs-15 d-inline-block bg-base-color me-5px align-middle"></span>
-              <span className="text-uppercase text-base-color fs-16 fw-600 d-inline-block">
-                {content.header}
-              </span>
-            </div>
-            <h2 className="text-dark-gray fw-700 ls-minus-2px">
-              {content.title}
-            </h2>
-            <p className="w-85 lg-w-100 text-dark-gray">
-              {content.description}
-            </p> */}
+            
             <TX_SectionHeaderType1 data={{header: content.header, title: content.title, description: content.description}}/>
           </motion.div>
 
@@ -101,6 +90,8 @@ export default function Section3({ data }: Props) {
               width={content.mainImage.width}
               height={content.mainImage.height}
               className="w-80 img-fluid"
+              priority
+              fetchPriority="high"
             />
             </div>
             

@@ -152,6 +152,8 @@ export default function Section2({ data }: Props) {
                 width={data.content.mainImage.width}
                 height={data.content.mainImage.height}
                 className="border-radius-15px w-100"
+                priority
+                fetchPriority="high"
               />
             </motion.div>
 

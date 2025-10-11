@@ -127,6 +127,8 @@ export default function TX_CardSlider({data}:Props) {
                         width={400}
                         height={250}
                         className="w-100 h-auto"
+                        priority
+                        fetchPriority="high"
                       />
                     </a>
                   </div>

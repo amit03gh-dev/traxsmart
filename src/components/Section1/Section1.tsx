@@ -3,7 +3,7 @@
 
 import { HeroContentItem } from '@/types/home';
 import MagicCursor from '../common/MagicCursor';
-import HeroSlider from '../common/HeroSlider';
+import TX_HeroSlider from '../common/Slider/TX_HeroSlider';
 
 
 type HeroData = {
@@ -19,7 +19,7 @@ export default function Section1({data}:Props ) {
   return (
     <>
     <MagicCursor/>
-    <HeroSlider data={data.content}/>
+    <TX_HeroSlider data={data.content}/>
     </>
   );
 }

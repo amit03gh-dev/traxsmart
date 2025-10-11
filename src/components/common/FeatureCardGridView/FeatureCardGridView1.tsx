@@ -27,6 +27,8 @@ const FeatureCardGridView1 = ({ data }: Props) => {
                 width={76.8}
                 height={76.8}
                 className="mb-3"
+                priority
+                fetchPriority="high"
               />
             </div>
             <div className="feature-box-content">

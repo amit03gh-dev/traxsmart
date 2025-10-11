@@ -15,7 +15,7 @@ interface Props {
   data: HeroContentItem[]
 }
 
-export default function HeroSlider({data}: Props) {
+export default function TX_HeroSlider({data}: Props) {
   const [activeIndex, setActiveIndex] = useState(0);
 
   const containerVariants = {

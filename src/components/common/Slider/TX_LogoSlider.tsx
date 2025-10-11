@@ -148,6 +148,8 @@ export default function TX_LogoSlider() {
                     width={100}
                     height={100}
                     className="w-80"
+                    priority
+                    fetchPriority="high"
                   />
                 </a>
               </SwiperSlide>

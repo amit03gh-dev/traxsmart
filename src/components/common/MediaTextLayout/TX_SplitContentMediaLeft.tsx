@@ -74,6 +74,7 @@ export default function TX_SplitContentMediaLeft({ data }: Props) {
                 sizes="(max-width: 992px) 100vw, 50vw"
                 style={{ objectFit: "cover" }}
                 className="shadow"
+                fetchPriority="high"
               />
             </div>
 
