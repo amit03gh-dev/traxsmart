@@ -171,6 +171,8 @@ export default function Section2({ data }: Props) {
                   width={data.content.secondaryImage.width}
                   height={data.content.secondaryImage.height}
                   className="border-radius-15px box-shadow-quadruple-large"
+                  priority
+                  fetchPriority="high"
                 />
               </motion.div>
             )}

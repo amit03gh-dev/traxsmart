@@ -79,6 +79,8 @@ export default function DesktopView({
               fill
               className="img-fluid rounded"
               style={{ objectFit: "contain" }}
+              priority
+              fetchPriority="high"
             />
           </div>
 

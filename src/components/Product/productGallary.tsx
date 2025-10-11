@@ -41,6 +41,8 @@ export default function ProductGallery({galleryImages}:{galleryImages: GalleryIm
                     width={600}
                     height={600}
                     className="w-100"
+                    priority
+                    fetchPriority="high"
                   />
                 </a>
               </SwiperSlide>
@@ -66,6 +68,8 @@ export default function ProductGallery({galleryImages}:{galleryImages: GalleryIm
                   width={120}
                   height={120}
                   className="w-100"
+                  priority
+                  fetchPriority="high"
                 />
               </SwiperSlide>
             ))}

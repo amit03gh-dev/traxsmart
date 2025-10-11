@@ -70,7 +70,9 @@ const SplitContentMediaRight = ({ data }: Props) => {
                     className="border-radius-6px w-100"
                     width={800}
                     height={600}
-                    priority={true}
+                    // priority={true}
+                    priority
+                    fetchPriority="high"
                   />
                 </div>
                 <span

@@ -83,6 +83,7 @@ export default function ImageSlider({
               priority={index === 0}
               style={{ objectFit: "cover" }}
               className={`object-cover position-relative ${imageStyle}`}
+              fetchPriority="high"
             />
 
             {/* Overlay Content */}

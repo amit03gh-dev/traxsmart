@@ -67,6 +67,8 @@ export default function VerticalSlider({
                                             alt={img.title || `Slide ${index}-${i}`}
                                             fill
                                             style={{ objectFit: 'cover' }}
+                                            priority
+                                            fetchPriority="high"
                                         />
 
                                         {/* Overlay Content */}

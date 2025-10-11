@@ -27,6 +27,8 @@ export default function ProductVideo({
           height={280}
           className="img-fluid rounded shadow"
           style={{ objectFit: "cover" }}
+          priority
+          fetchPriority="high"
         />
         <button
           onClick={() => setShowVideo(true)}

@@ -78,6 +78,8 @@ export default function MobileView({
           fill
           className="img-fluid rounded shadow"
           style={{ objectFit: "contain" }}
+          priority
+          fetchPriority="high"
         />
       </div>
 
