@@ -7,3 +7,4 @@ export const HOME_URL = `${BASE_STRAPI_URL}/api/homes`;
 export const NAVBAR_URL = `${BASE_STRAPI_URL}/api/navbars`;
 export const PRODUCT_URL = `${BASE_STRAPI_URL}/api/products`;
 export const FOOTER_URL = `${BASE_STRAPI_URL}/api/footers`;
+export const PRODUCT_LIST_URL = `${BASE_STRAPI_URL}/api/product-listings`;

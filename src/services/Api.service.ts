@@ -34,6 +34,7 @@ class ApiService<
     this._url = url;
     this._headers = { ...getDefaultHeaders(), ...headers };
     this.cancelToken = axios.CancelToken.source();
+    console.log(`[ApiService] Initialized with URL: ${this._url}`);
   }
 
   post(payload?: Payload, params?: Params, headers?: RequestHeaders): Promise<Res> {
@@ -44,7 +45,7 @@ class ApiService<
   }
 
   get(params?: Params, headers?: RequestHeaders, noOrgId?: boolean): Promise<Res> {
-    console.log("API called at:>>>>>>>>>>>>>>>>>>>>>>>>>", new Date().toISOString());
+    // console.log("API called at:>>>>>>>>>>>>>>>>>>>>>>>>>", new Date().toISOString());
     const _params: Params = {
       ...(params as Params),
       ...(getDefaultParams() as Params),
@@ -62,20 +63,18 @@ class ApiService<
     );
   }
 
-  getById(id: string | number, params?: Params, headers?: RequestHeaders): Promise<Res> {
-    const _params: Params = {
-      ...(params as Params),
-      _id: id,
-      ...(getDefaultParams() as Params),
-    };
+getById(id: string | number, params?: Params, headers?: RequestHeaders): Promise<Res> {
+  const url = joinUrlPath(this._url, id);
+ console.log("URL", url);
+  return doGetById<Res, Params>(
+    url,
+    params,
+    { ...this._headers, ...headers },
+    this.cancelToken
+  );
+}
 
-    return doGetById<Res, Params>(
-      this._url,
-      _params,
-      { ...this._headers, ...headers },
-      this.cancelToken
-    );
-  }
+
 
   put(id: string | number, payload?: Payload, params?: Params, headers?: RequestHeaders): Promise<Res> {
     return doPut<Res, Payload, Params>(

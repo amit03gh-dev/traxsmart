@@ -5,6 +5,9 @@ import "./icon.min.css";
 import "./globals.css";
 import "./responsive.css";
 import "./green-energy.css";
+// import "./js/jquery.js";
+// import "./js/vendors.min.js";
+// import "./js/main.js";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import BootstrapProvider from './bootstrap-provider';
 import Navbar from "@/components/Navbar/Navbar";
@@ -42,10 +45,10 @@ export default async function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         
         {/* Load Google Fonts */}
-        <link
+        {/* <link
           href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Inter:wght@200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
-        />
+        /> */}
       </head>
       <body  className={`${inter.variable} font-sans`} data-mobile-nav-style="classic">
         <Navbar data = {services.data}/>
@@ -55,6 +58,10 @@ export default async function RootLayout({
         </BootstrapProvider>
         <Footer data={footerData.data} />
         <ScrollProgress/>
+
+        {/* <Script type="text/javascript" src="/js/jquery.js"></Script>
+        <Script type="text/javascript" src="/js/vendors.min.js"></Script>
+        <Script type="text/javascript" src="/js/main.js"></Script> */}
       </body>
     </html>
   );

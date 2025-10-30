@@ -30,8 +30,8 @@ Table of contents
 /* ===================================
     01. Google font
 ====================================== */
-/* @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&amp;display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&amp;display=swap");
 :root {
   --alt-font: "Plus Jakarta Sans", sans-serif;
   --primary-font: "Inter", sans-serif;
@@ -19329,4 +19329,19 @@ footer .footer-navbar .nav-item:last-child a {
 }
 .footer-demo img {
   max-height: 55px !important;
+}
+
+/* Tab style 09 */
+.tab-style-09 .nav-tabs .nav-item {
+  padding: 0 35px;
+}
+.tab-style-09 .nav-tabs .nav-item .nav-link {
+  padding: 0;
+  border: none;
+  background: transparent;
+  position: relative;
+  color: rgba(255, 255, 255, 0.45);
+}
+.tab-style-09 .nav-tabs .nav-item .nav-link.active, .tab-style-09 .nav-tabs .nav-item .nav-link.show, .tab-style-09 .nav-tabs .nav-item .nav-link:hover {
+  color: var(--white);
 }

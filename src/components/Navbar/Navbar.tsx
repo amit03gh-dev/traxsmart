@@ -12,6 +12,7 @@ interface NavbarProps {
 export default function Navbar({ data }: NavbarProps) {
   useBootstrapHover();
   const { logo, menu_items, phone_number, cta_button } = data;
+  console.log("logo is>>>>>>>>>",logo)
 
   return (
     <header>

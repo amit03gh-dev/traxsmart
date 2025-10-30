@@ -1,5 +1,7 @@
 // declarations.d.ts
 declare module 'bootstrap/dist/js/bootstrap.bundle.min.js';
+// Allow importing non-module JS files
+declare module "*.js";
 
 
 // src/declarations.d.ts

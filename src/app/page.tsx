@@ -6,6 +6,7 @@ import Section5 from "@/components/Section5/Section5";
 import Section6 from "@/components/Section6/Section6";
 import Section7 from "@/components/Section7/Section7";
 import Section8 from "@/components/Section8/Section8";
+import Section9 from "@/components/Section9/Section9";
 
 import HomeService from "@/services/Home.service";
 
@@ -43,6 +44,8 @@ export default async function Home() {
 
       {/* More Services */}
       <Section7 data={comp7} />
+
+      <Section9/>
 
       {/* Contact */}
       <Section8 data={comp8} />

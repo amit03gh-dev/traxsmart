@@ -87,7 +87,7 @@ export async function doGetById<
     .get<Res>(url, { params, headers })
     .then(({ data }) => {
       const d = data as unknown as { data: Res[] };
-      return { ...(data as object), data: d.data[0] } as Res;
+      return { ...(data as object), data: d.data } as Res;
     })
     .catch((err: AxiosError<ApiError>) => Promise.reject(err.response?.data));
 }
