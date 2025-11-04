@@ -77,7 +77,8 @@ const Section9 = () => {
                     /> */}
                   <Image
                     className="w-100"
-                    src="/Screenshot.png"
+                    // src="/Screenshot.png"
+                    src="/media/deviceImage1.jpg"
                     alt="Screenshot"
                     width={800} // adjust based on your image size
                     height={600} // adjust based on your image size

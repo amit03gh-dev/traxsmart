@@ -1,6 +1,7 @@
 import productListingService from "@/services/ProductListing.service";
 import { ProductItem } from "@/types/productListing";
 import Image from "next/image";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 export interface Product {
@@ -34,7 +35,7 @@ export default async function page({
   const response = await productListingService.getProductById(id);
   const productsData = response.data || {};
   const { pageTitle, pageDescription, breadcrumbs, products } = productsData;
-console.log("products >>>>>>>>>>",products)
+// console.log("products >>>>>>>>>>",products)
   return (
     <>
       <section className="top-space-margin half-section bg-gradient-very-light-gray">
@@ -53,9 +54,14 @@ console.log("products >>>>>>>>>>",products)
             <div className="col-12 breadcrumb breadcrumb-style-01 d-flex justify-content-center">
               <ul>
                 <li>
-                  <a href="demo-fashion-store.html">Home</a>
+                  {/* <a href="demo-fashion-store.html">Home</a> */}
+                  <Link href={"/"}>Home</Link>
                 </li>
-                <li>Products</li>
+                {/* <Link href={"/#"}>Products</Link> */}
+                <li>
+                  {/* <a href="/">Products</a> */}
+                  <Link href={`/`}>Products</Link>
+                </li>
                 <li>{breadcrumbs[2]}</li>
               </ul>
             </div>
@@ -68,7 +74,7 @@ console.log("products >>>>>>>>>>",products)
           <div className="row">
             <div className="col-12 md-mb-60px">
               <ul
-                className="row g-4 shop-modern shop-wrapper  grid grid-4col xl-grid-3col sm-grid-2col xs-grid-1col gutter-extra-large text-center"
+                className="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 shop-modern shop-wrapper  grid grid-4col xl-grid-3col sm-grid-2col xs-grid-1col gutter-extra-large text-center"
                 // data-anime='{ "el": "childs", "translateY": [-15, 0], "opacity": [0,1], "duration": 300, "delay": 0, "staggervalue": 150, "easing": "easeOutQuad" }'
               >
                 {/* <li className="grid-sizer"></li> */}
@@ -92,15 +98,16 @@ console.log("products >>>>>>>>>>",products)
                           <div className="shop-overlay bg-gradient-gray-light-dark-transparent"></div>
                         </a>
                         <div className="shop-buttons-wrap">
-                          <a
-                            href="products-gps-tsindia140.html"
+                          <Link
+                            href="/#"
                             className="alt-font btn btn-small btn-box-shadow btn-white btn-round-edge left-icon add-to-cart"
                           >
                             <i className="feather icon-feather-eye"></i>
                             <span className="quick-view-text button-text">
-                              View Details
+                              {/* View Details */}
+                              BUY NOW
                             </span>
-                          </a>
+                          </Link>
                         </div>
                       </div>
                       <div className="shop-footer text-center">
