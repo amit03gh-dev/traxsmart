@@ -1,343 +1,321 @@
-// import React from 'react';
-
-// const AboutSection = () => {
-//   return (
-//     <section className="about-section top-space-margin half-section bg-gradient-very-light-gray">
-//       <div className="container">
-//         <div className="row align-items-center">
-//           <div className="col-lg-6 mb-4 mb-lg-0">
-//             <h2 className="display-4 fw-bold text-primary mb-4">About Us</h2>
-//             <p className="lead">
-//               The TraxSmart story like many others in this field is inspired by the delicate peace of mind that comes with finding foolproof security solutions.
-//             </p>
-//           </div>
-//           <div className="col-lg-6">
-//             <div className="card shadow-sm border-0">
-//               <div className="card-body p-4">
-//                 <h5 className="card-title text-primary mb-3">Our Story</h5>
-//                 <p className="card-text">
-//                   The founders being one of the key players in the automation and security industry in India visualized the nex-gen interpretation of the word surveillance i.e. tracking/monitoring the precious ones individually. Being impressed with the efficacy and high-precision results that technological advances that the Global Positioning System (GPS) brings in a person's life, the solution they opted was a specialized tracking system, which can help families feel closer and securer, vehicle owners feel safer with an invisible security blanket and commercial entities can keep a "smart track" on their vehicular fleet.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="row mt-5">
-//           <div className="col-md-4 mb-4">
-//             <div className="card h-100 border-0 shadow-sm">
-//               <div className="card-body text-center p-4">
-//                 <div className="mb-3">
-//                   <i className="fas fa-bullseye fa-2x text-primary"></i>
-//                 </div>
-//                 <h4 className="card-title text-primary">Our Aim</h4>
-//                 <p className="card-text">
-//                   We aim to provide cost-effective, efficient, and state-of-the-art technology to our customers, a technology that keeps our clients safe and peaceful all the time.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-          
-//           <div className="col-md-4 mb-4">
-//             <div className="card h-100 border-0 shadow-sm">
-//               <div className="card-body text-center p-4">
-//                 <div className="mb-3">
-//                   <i className="fas fa-users fa-2x text-primary"></i>
-//                 </div>
-//                 <h4 className="card-title text-primary">Who We Serve</h4>
-//                 <p className="card-text">
-//                   In TraxSmart, we have stepped ahead with the sole motive and agenda to provide and cater all specific requirements with customized solutions for EVERY SPECIFIC criterion.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-          
-//           <div className="col-md-4 mb-4">
-//             <div className="card h-100 border-0 shadow-sm">
-//               <div className="card-body text-center p-4">
-//                 <div className="mb-3">
-//                   <i className="fas fa-cogs fa-2x text-primary"></i>
-//                 </div>
-//                 <h4 className="card-title text-primary">Our Solutions</h4>
-//                 <p className="card-text">
-//                   With a product basket of VARIOUS solutions, we aim at catering "pin to plane" need of all individuals, organizations, and departments.
-//                 </p>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="row mt-5">
-//           <div className="col-12">
-//             <h3 className="text-center mb-4 text-primary">Our Target Verticals</h3>
-//             <div className="row">
-//               <div className="col-md-4 text-center mb-3">
-//                 <div className="bg-white p-4 rounded shadow-sm h-100">
-//                   <i className="fas fa-car fa-2x text-primary mb-3"></i>
-//                   <h5>Personal Car Tracker</h5>
-//                 </div>
-//               </div>
-//               <div className="col-md-4 text-center mb-3">
-//                 <div className="bg-white p-4 rounded shadow-sm h-100">
-//                   <i className="fas fa-truck fa-2x text-primary mb-3"></i>
-//                   <h5>Fleet Management</h5>
-//                 </div>
-//               </div>
-//               <div className="col-md-4 text-center mb-3">
-//                 <div className="bg-white p-4 rounded shadow-sm h-100">
-//                   <i className="fas fa-bus fa-2x text-primary mb-3"></i>
-//                   <h5>School Buses Tracker</h5>
-//                 </div>
-//               </div>
-//             </div>
-//           </div>
-//         </div>
-
-//         <div className="row mt-5">
-//           <div className="col-12">
-//             <div className="bg-primary text-white p-5 rounded text-center">
-//               <h3 className="mb-3">Our Commitment</h3>
-//               <p className="mb-0">
-//                 No matter what the size/quantum business we achieve from you, we always aim to make you feel special and one with the topmost priority.
-//               </p>
-//             </div>
-//           </div>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default AboutSection;
-
-
-
 'use client'
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
-const AboutPage = () => {
+const ModernAboutSection = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
-    <div className="about-section top-space-margin half-section bg-gradient-very-light-gray">
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-700 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-3xl mx-auto">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6">
-              About <span className="text-yellow-300">TraxSmart</span>
-            </h1>
-            <p className="text-xl opacity-90">
-              Pioneering next-generation GPS tracking solutions for peace of mind in an interconnected world
-            </p>
+    <section className="about-section top-space-margin half-section bg-gradient-very-light-gray" style={{ 
+      background: 'linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%)',
+      overflow: 'hidden'
+    }}>
+      <div className="container">
+        {/* Header Section */}
+        <div className="row justify-content-center mb-5">
+          <div className="col-lg-8 text-center">
+            <div className={`section-header ${isVisible ? 'fade-in-up' : ''}`}>
+              <span className="badge bg-primary-gradient rounded-pill px-4 py-2 mb-3">About TraxSmart</span>
+              <h1 className="display-4 fw-bold text-dark mb-3">Security Through Innovation</h1>
+              <p className="lead text-muted">
+                Pioneering next-generation GPS tracking solutions for peace of mind in an interconnected world
+              </p>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* Story Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="inline-block bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                Our Story
-              </div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
-                Redefining Security Through Innovation
-              </h2>
-              <div className="space-y-4 text-gray-600">
-                <p className="text-lg">
-                  The TraxSmart story, like many others in this field, is inspired by the delicate peace of mind that comes with finding foolproof security solutions.
-                </p>
-                <p>
-                  The founders, being one of the key players in the automation and security industry in India, visualized the next-generation interpretation of the word surveillance i.e. tracking/monitoring the precious ones individually.
-                </p>
-                <p>
-                  Being impressed with the efficacy and high-precision results that technological advances that the Global Positioning System (GPS) brings in a person&apos;s life, the solution they opted was a specialized tracking system.
-                </p>
-              </div>
-            </div>
-            
-            <div className="relative">
-              <div className="bg-white p-8 rounded-2xl shadow-xl border border-gray-100">
-                <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                    <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                    </svg>
-                  </div>
-                  <h3 className="text-2xl font-semibold text-gray-900 ml-4">Our Mission</h3>
+        {/* Main Content */}
+        <div className="row align-items-center mb-5">
+          <div className="col-lg-6 mb-4 mb-lg-0">
+            <div className={`story-card p-4 p-lg-5 ${isVisible ? 'fade-in-left' : ''}`}
+                 style={{
+                   background: 'white',
+                   borderRadius: '20px',
+                   boxShadow: '0 15px 30px rgba(0,0,0,0.1)',
+                   height: '100%'
+                 }}>
+              <div className="icon-wrapper mb-4">
+                <div className="icon-circle bg-primary-gradient">
+                  <i className="fas fa-shield-alt text-white"></i>
                 </div>
-                <p className="text-gray-600 text-lg">
-                  To provide cost-effective, efficient, and state-of-the-art technology that keeps our clients safe and peaceful all the time.
-                </p>
+              </div>
+              <h3 className="h2 fw-bold text-dark mb-4">Our Journey</h3>
+              <p className="text-muted mb-4">
+                The TraxSmart story is inspired by the delicate peace of mind that comes with finding foolproof security solutions. 
+                Our founders, key players in India&apos;s automation and security industry, envisioned a new interpretation of surveillance.
+              </p>
+              <p className="text-muted">
+                Impressed by the precision of GPS technology, we developed specialized tracking systems that help families feel closer, 
+                vehicle owners feel safer, and businesses maintain smart oversight of their fleets.
+              </p>
+            </div>
+          </div>
+          
+          <div className="col-lg-6">
+            <div className={`visual-card position-relative ${isVisible ? 'fade-in-right' : ''}`}>
+              <div className="main-visual bg-primary-gradient rounded-4 p-5 text-white text-center"
+                   style={{ height: '300px' }}>
+                <div className="visual-content">
+                  <i className="fas fa-satellite display-1 mb-3"></i>
+                  <h3 className="h4">High-Precision GPS Technology</h3>
+                  <p className="mb-0">Real-time tracking with military-grade accuracy</p>
+                </div>
               </div>
               
               {/* Floating elements */}
-              <div className="absolute -top-4 -right-4 bg-yellow-400 text-gray-900 px-4 py-2 rounded-lg shadow-lg">
-                <span className="font-semibold">Since 2015</span>
+              <div className="floating-card card border-0 shadow position-absolute"
+                   style={{
+                     top: '-20px',
+                     right: '-20px',
+                     width: '200px',
+                     background: 'white',
+                     borderRadius: '15px'
+                   }}>
+                <div className="card-body p-3 text-center">
+                  <i className="fas fa-mobile-alt text-primary fs-2 mb-2"></i>
+                  <h6 className="mb-0">Mobile Enabled</h6>
+                  <small className="text-muted">Always connected</small>
+                </div>
               </div>
-              <div className="absolute -bottom-4 -left-4 bg-green-500 text-white px-4 py-2 rounded-lg shadow-lg">
-                <span className="font-semibold">10K+ Devices</span>
+              
+              <div className="floating-card card border-0 shadow position-absolute"
+                   style={{
+                     bottom: '-20px',
+                     left: '-20px',
+                     width: '200px',
+                     background: 'white',
+                     borderRadius: '15px'
+                   }}>
+                <div className="card-body p-3 text-center">
+                  <i className="fas fa-bolt text-warning fs-2 mb-2"></i>
+                  <h6 className="mb-0">Real-time Alerts</h6>
+                  <small className="text-muted">Instant notifications</small>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Solutions Section */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center max-w-2xl mx-auto mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Our Solutions</h2>
-            <p className="text-xl text-gray-600">
-              Customized tracking solutions for every specific criterion
-            </p>
+        {/* Mission & Values */}
+        <div className="row mb-5">
+          <div className="col-12">
+            <div className={`mission-card p-4 p-lg-5 rounded-4 ${isVisible ? 'fade-in-up' : ''}`}
+                 style={{
+                   background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+                   color: 'white'
+                 }}>
+              <div className="row align-items-center">
+                <div className="col-lg-8">
+                  <h3 className="h2 fw-bold mb-3">Our Mission</h3>
+                  <p className="mb-0 fs-5">
+                    To provide cost-effective, efficient, and state-of-the-art technology that keeps our clients 
+                    safe and peaceful all the time through impermeable security systems.
+                  </p>
+                </div>
+                <div className="col-lg-4 text-center">
+                  <div className="mission-icon bg-white rounded-circle d-inline-flex align-items-center justify-content-center"
+                       style={{ width: '100px', height: '100px' }}>
+                    <i className="fas fa-bullseye text-primary fs-1"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Services Grid */}
+        <div className="row">
+          <div className="col-12 mb-5">
+            <h2 className="text-center fw-bold text-dark mb-5">Who We Serve</h2>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-8">
-            {/* Personal Vehicle Tracking */}
-            <div className="group bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-2xl border border-blue-100 hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-blue-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
-                </svg>
+          <div className="col-md-4 mb-4">
+            <div className={`service-card text-center p-4 rounded-4 h-100 ${isVisible ? 'fade-in-up' : ''}`}
+                 style={{
+                   background: 'white',
+                   boxShadow: '0 10px 25px rgba(0,0,0,0.08)',
+                   transition: 'transform 0.3s ease'
+                 }}
+                 onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
+                 onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+              <div className="service-icon bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                   style={{ width: '80px', height: '80px' }}>
+                <i className="fas fa-car text-white fs-2"></i>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Personal Vehicle Tracking</h3>
-              <p className="text-gray-600 mb-6">
+              <h4 className="fw-bold text-dark mb-3">Personal Vehicle Tracking</h4>
+              <p className="text-muted">
                 Advanced GPS tracking for personal cars with real-time location monitoring and security features.
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  24/7 Real-time monitoring
-                </li>
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Geo-fencing alerts
-                </li>
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Anti-theft protection
-                </li>
-              </ul>
-            </div>
-
-            {/* Fleet Management */}
-            <div className="group bg-gradient-to-br from-green-50 to-emerald-50 p-8 rounded-2xl border border-green-100 hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-green-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                </svg>
+              <div className="mt-3">
+                <span className="badge bg-light text-primary rounded-pill">24/7 Monitoring</span>
+                <span className="badge bg-light text-primary rounded-pill ms-1">Geo-fencing</span>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">Fleet Management</h3>
-              <p className="text-gray-600 mb-6">
+            </div>
+          </div>
+          
+          <div className="col-md-4 mb-4">
+            <div className={`service-card text-center p-4 rounded-4 h-100 ${isVisible ? 'fade-in-up' : ''}`}
+                 style={{
+                   background: 'white',
+                   boxShadow: '0 10px 25px rgba(0,0,0,0.08)',
+                   transition: 'transform 0.3s ease'
+                 }}
+                 onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
+                 onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+              <div className="service-icon bg-success rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                   style={{ width: '80px', height: '80px' }}>
+                <i className="fas fa-truck text-white fs-2"></i>
+              </div>
+              <h4 className="fw-bold text-dark mb-3">Fleet Management</h4>
+              <p className="text-muted">
                 Comprehensive solutions for commercial fleets with route optimization and performance analytics.
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Route optimization
-                </li>
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Fuel monitoring
-                </li>
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Performance analytics
-                </li>
-              </ul>
-            </div>
-
-            {/* School Bus Tracking */}
-            <div className="group bg-gradient-to-br from-orange-50 to-amber-50 p-8 rounded-2xl border border-orange-100 hover:shadow-xl transition-all duration-300">
-              <div className="w-16 h-16 bg-orange-500 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                </svg>
+              <div className="mt-3">
+                <span className="badge bg-light text-success rounded-pill">Route Optimization</span>
+                <span className="badge bg-light text-success rounded-pill ms-1">Fuel Monitoring</span>
               </div>
-              <h3 className="text-2xl font-semibold text-gray-900 mb-4">School Bus Tracking</h3>
-              <p className="text-gray-600 mb-6">
+            </div>
+          </div>
+          
+          <div className="col-md-4 mb-4">
+            <div className={`service-card text-center p-4 rounded-4 h-100 ${isVisible ? 'fade-in-up' : ''}`}
+                 style={{
+                   background: 'white',
+                   boxShadow: '0 10px 25px rgba(0,0,0,0.08)',
+                   transition: 'transform 0.3s ease'
+                 }}
+                 onMouseEnter={(e) => e.currentTarget.style.transform = 'translateY(-10px)'}
+                 onMouseLeave={(e) => e.currentTarget.style.transform = 'translateY(0)'}>
+              <div className="service-icon bg-warning rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                   style={{ width: '80px', height: '80px' }}>
+                <i className="fas fa-bus text-white fs-2"></i>
+              </div>
+              <h4 className="fw-bold text-dark mb-3">School Bus Tracking</h4>
+              <p className="text-muted">
                 Ensure student safety with specialized tracking solutions for school transportation.
               </p>
-              <ul className="space-y-2">
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Real-time location
-                </li>
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Parent alerts
-                </li>
-                <li className="flex items-center text-gray-600">
-                  <svg className="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                  </svg>
-                  Speed monitoring
-                </li>
-              </ul>
+              <div className="mt-3">
+                <span className="badge bg-light text-warning rounded-pill">Child Safety</span>
+                <span className="badge bg-light text-warning rounded-pill ms-1">Parent Alerts</span>
+              </div>
             </div>
           </div>
         </div>
-      </section>
 
-      {/* Commitment Section */}
-      <section className="py-20 bg-gradient-to-r from-gray-900 to-blue-900 text-white">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold mb-8">Our Commitment to You</h2>
-            <p className="text-xl mb-8 opacity-90">
-              No matter what the size/quantum business we achieve from you, we always aim to make you feel special and one with the topmost priority.
-            </p>
-            <div className="grid md:grid-cols-3 gap-8 mt-12">
-              <div className="text-center">
-                <div className="w-20 h-20 bg-blue-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Customer First</h3>
-                <p className="opacity-80">Your satisfaction is our top priority</p>
+        {/* Commitment Section */}
+        <div className="row mt-5">
+          <div className="col-12">
+            <div className={`commitment-card p-5 rounded-4 text-center ${isVisible ? 'fade-in-up' : ''}`}
+                 style={{
+                   background: 'white',
+                   boxShadow: '0 15px 35px rgba(0,0,0,0.1)',
+                   border: '1px solid rgba(0,0,0,0.05)'
+                 }}>
+              <div className="commitment-icon bg-primary rounded-circle d-inline-flex align-items-center justify-content-center mb-4"
+                   style={{ width: '80px', height: '80px' }}>
+                <i className="fas fa-heart text-white fs-2"></i>
               </div>
-              <div className="text-center">
-                <div className="w-20 h-20 bg-green-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Reliability</h3>
-                <p className="opacity-80">Trusted by thousands of customers</p>
-              </div>
-              <div className="text-center">
-                <div className="w-20 h-20 bg-purple-500 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-10 h-10 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-                  </svg>
-                </div>
-                <h3 className="text-xl font-semibold mb-2">Innovation</h3>
-                <p className="opacity-80">Always ahead with technology</p>
-              </div>
+              <h3 className="h2 fw-bold text-dark mb-3">Our Commitment</h3>
+              <p className="fs-5 text-muted mb-4">
+                No matter the size of your business, we always aim to make you feel special with top priority service.
+                We provide customized solutions for every specific criterion with our diverse product basket.
+              </p>
+              <button className="btn btn-primary btn-lg px-4 py-2 rounded-pill">
+                Discover Our Solutions <i className="fas fa-arrow-right ms-2"></i>
+              </button>
             </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+
+      <style jsx>{`
+        .modern-about {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .bg-primary-gradient {
+          background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%) !important;
+        }
+        
+        .icon-circle {
+          width: 70px;
+          height: 70px;
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        
+        .fade-in-up {
+          animation: fadeInUp 0.8s ease-out;
+        }
+        
+        .fade-in-left {
+          animation: fadeInLeft 0.8s ease-out;
+        }
+        
+        .fade-in-right {
+          animation: fadeInRight 0.8s ease-out;
+        }
+        
+        @keyframes fadeInUp {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        @keyframes fadeInLeft {
+          from {
+            opacity: 0;
+            transform: translateX(-30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        @keyframes fadeInRight {
+          from {
+            opacity: 0;
+            transform: translateX(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+        
+        .floating-card {
+          animation: float 6s ease-in-out infinite;
+        }
+        
+        @keyframes float {
+          0% {
+            transform: translateY(0px);
+          }
+          50% {
+            transform: translateY(-10px);
+          }
+          100% {
+            transform: translateY(0px);
+          }
+        }
+        
+        .service-card:hover {
+          transform: translateY(-10px) !important;
+        }
+      `}</style>
+    </section>
   );
 };
 
-export default AboutPage;
+export default ModernAboutSection;
