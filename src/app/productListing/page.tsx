@@ -99,13 +99,13 @@ export default async function page({
                         </a>
                         <div className="shop-buttons-wrap">
                           <Link
-                            href="/#"
+                            href="/products/2g-gps"
                             className="alt-font btn btn-small btn-box-shadow btn-white btn-round-edge left-icon add-to-cart"
                           >
                             <i className="feather icon-feather-eye"></i>
                             <span className="quick-view-text button-text">
-                              {/* View Details */}
-                              BUY NOW
+                              View Details
+                              {/* BUY NOW */}
                             </span>
                           </Link>
                         </div>
