@@ -458,18 +458,18 @@ const PrivacyPolicy = () => {
           {/* Quick Links */}
           <div className="text-center mt-5">
             <div className="d-flex flex-wrap justify-content-center gap-3">
-              <Link href="/terms" className="btn btn-outline-primary">
+              <Link href="/terms" className="text-decoration-underline text-primary">
                 Terms & Conditions
               </Link>
-              <Link href="/shipping-policy" className="btn btn-outline-secondary">
+              <Link href="/shipping-policy" className="text-decoration-underline text-secondary">
                 Shipping Policy
               </Link>
-              <Link href="/refund-policy" className="btn btn-outline-success">
+              <Link href="/refund-policy" className="text-decoration-underline text-success">
                 Refund Policy
               </Link>
-              <Link href="/contact" className="btn btn-outline-info">
+              {/* <Link href="/contact" className="btn btn-outline-info">
                 Contact Us
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
