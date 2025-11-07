@@ -154,10 +154,10 @@ export default function ProductDetails({ product }: Props) {
             Guarantee safe and secure checkout
           </span>
  <div>
-          <Image src="/media/paymentMethod/visa.svg" width={50} height={40} className="h-40px me-5px mb-5px" alt="" />
-          <Image src="/media/paymentMethod/mastercard.svg" width={50} height={40} className="h-40px me-5px mb-5px" alt="" />
-          <Image src="/media/paymentMethod/amazonPay.svg"width={50} height={40} className="h-40px me-5px mb-5px" alt="" />
-          <Image src="/media/paymentMethod/upi.svg" width={50} height={40} className="h-40px me-5px mb-5px" alt="" />
+          <Image src="/media/paymentMethod/visa.svg" width={60} height={50} className="h-60px me-5px mb-5px" alt="" />
+          <Image src="/media/paymentMethod/mastercard.svg" width={60} height={50} className="h-60px me-5px mb-5px" alt="" />
+          <Image src="/media/paymentMethod/amazonPay.svg"width={60} height={50} className="h-60px me-5px mb-5px" alt="" />
+          <Image src="/media/paymentMethod/upi.svg" width={60} height={50} className="h-60px me-5px mb-5px" alt="" />
           {/* <Image src="/images/diners-club.svg" width={40} height={30} className="h-30px me-5px mb-5px" alt="" />
           <Image src="/images/union-pay.svg" width={40} height={30} className="h-30px" alt="" /> */}
         </div>
