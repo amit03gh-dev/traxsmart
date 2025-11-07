@@ -107,6 +107,7 @@ export default async function ProductPage({ params }: { params: Promise<{ id: st
                 features: product.features,
               }}
             />
+            
           </div>
         </div>
       </section>
