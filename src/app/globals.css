@@ -32,10 +32,19 @@ Table of contents
 ====================================== */
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&amp;display=swap");
-:root {
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap%27");
+:root {      
+    --alt-font: "Urbanist", sans-serif;
+    --primary-font: "Urbanist", sans-serif;
+    --base-color: #ffc700;
+    --dark-gray: #141414;
+    --medium-gray: #707070;
+    --aluminium-gray: rgba(255, 255, 255, 0.4);
+}
+/* :root {
   --alt-font: "Plus Jakarta Sans", sans-serif;
   --primary-font: "Inter", sans-serif;
-}
+} */
 /* ===================================
     02. CSS color variable
 ====================================== */

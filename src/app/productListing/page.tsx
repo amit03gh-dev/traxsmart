@@ -84,7 +84,7 @@ export default async function page({
                   <li key={item.id} className="grid-item">
                     <div className="shop-box mb-10px">
                       <div className="shop-image mb-20px">
-                        <a href="products-gps-tsindia140.html">
+                        <Link href="/products/2g-gps">
                           {/* <img src={item.image} alt="" /> */}
                           {/* {console.log("image is>>>>>>>>>>>>>",item.image.data.attributes.url)} */}
                           <Image
@@ -96,7 +96,7 @@ export default async function page({
                           />
                           <span className="lable new">New</span>
                           <div className="shop-overlay bg-gradient-gray-light-dark-transparent"></div>
-                        </a>
+                        </Link>
                         <div className="shop-buttons-wrap">
                           <Link
                             href="/products/2g-gps"
@@ -111,12 +111,13 @@ export default async function page({
                         </div>
                       </div>
                       <div className="shop-footer text-center">
-                        <a
-                          href="products-gps-tsindia140.html"
+                        {/* <a
+                          href="p"
                           className="alt-font text-dark-gray fs-19 fw-500"
                         >
                           {item.name}
-                        </a>
+                        </a> */}
+                        <Link  href="/products/2g-gps" className="alt-font text-dark-gray fs-19 fw-500">{item.name}</Link>
                         <div className="price lh-22 fs-16">
                           {item.description}
                         </div>
