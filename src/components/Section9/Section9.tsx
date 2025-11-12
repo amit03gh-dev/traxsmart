@@ -147,7 +147,7 @@ const Section9 = () => {
                 <figure className="m-0 position-relative hover-box border-radius-15px overflow-hidden">
                   <Image 
                   className="w-100"
-                  src="https://manuals.plus/wp-content/uploads/2023/04/000-Copy-14.jpg"
+                 src="/media/products/obd.jpg"
                   alt="Teltonika GH5200"
                   width={800}
                   height={800}
