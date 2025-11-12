@@ -26,7 +26,7 @@ const PrivacyPolicy = () => {
             </div>
             <div className="card-body">
               <p>
-                At Your Company, we are committed to protecting your privacy and ensuring the security 
+                At Your Traxsmart, we are committed to protecting your privacy and ensuring the security 
                 of your personal information. This Privacy Policy explains how we collect, use, disclose, 
                 and safeguard your information when you use our website and services.
               </p>
@@ -430,19 +430,19 @@ const PrivacyPolicy = () => {
                 <div className="col-md-6">
                   <p>
                     <strong>Email:</strong><br />
-                    privacy@yourcompany.com
+                    info@traxsmart.in
                   </p>
                   <p>
                     <strong>Phone:</strong><br />
-                    +91-XXXXX-XXXXX
+                      1800 889 5802
                   </p>
                 </div>
                 <div className="col-md-6">
                   <p>
                     <strong>Address:</strong><br />
-                    Your Company Name<br />
-                    123 Business Street<br />
-                    City, State 123456<br />
+                    Traxsmart Limited<br />
+                    3rd Floor, 21 Princep Street<br />
+                    Kolkata, WB 700072<br />
                     India
                   </p>
                 </div>

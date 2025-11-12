@@ -29,7 +29,7 @@ const Section9 = () => {
                 </li>
                 <li className="nav-item p-0 mb-20px lg-mb-10px">
                   <a className="nav-link" data-bs-toggle="tab" href="#tab_f2">
-                    Personal Trackers
+                    Asset Trackers
                   </a>
                 </li>
                 <li className="nav-item p-0 mb-20px lg-mb-10px">
@@ -39,14 +39,15 @@ const Section9 = () => {
                 </li>
                 <li className="nav-item p-0 mb-20px lg-mb-10px">
                   <a className="nav-link" data-bs-toggle="tab" href="#tab_f4">
-                    AIS140 Trackers
+                    AIS-140
                   </a>
                 </li>
-                <li className="nav-item p-0">
+                <li className="nav-item p-0 mb-20px lg-mb-10px">
                   <a className="nav-link" data-bs-toggle="tab" href="#tab_f5">
-                    Solutions
+                    TSINDIA2G
                   </a>
                 </li>
+                
               </ul>
               {/* end tab navigation */}
             </div>
@@ -78,7 +79,7 @@ const Section9 = () => {
                   <Image
                     className="w-100"
                     // src="/Screenshot.png"
-                    src="/media/deviceImage1.jpg"
+                    src="/media/basic_tracker.jpg"
                     alt="Screenshot"
                     width={800} // adjust based on your image size
                     height={600} // adjust based on your image size

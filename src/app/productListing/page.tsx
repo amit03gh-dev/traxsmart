@@ -34,6 +34,7 @@ export default async function page({
   }
   const response = await productListingService.getProductById(id);
   const productsData = response.data || {};
+  console.log("product listing data>>>>>>>>>>>", productsData);
   const { pageTitle, pageDescription, breadcrumbs, products } = productsData;
 // console.log("products >>>>>>>>>>",products)
   return (
@@ -88,6 +89,7 @@ export default async function page({
                           {/* <img src={item.image} alt="" /> */}
                           {/* {console.log("image is>>>>>>>>>>>>>",item.image.data.attributes.url)} */}
                           <Image
+                            // src={item.image}
                             src={item.image}
                             alt={item.name || "Product Image"}
                             width={400} // adjust width
