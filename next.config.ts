@@ -9,6 +9,7 @@ const nextConfig = {
       { protocol: "https", hostname: "loving-chicken-365a0ec42b.media.strapiapp.com" },
       { protocol: "https", hostname: "images.unsplash.com" },
       { protocol: "https", hostname: "manuals.plus" },
+      { protocol: "https", hostname: "res.cloudinary.com" },
       {
         protocol: "http",
         hostname: "localhost",
